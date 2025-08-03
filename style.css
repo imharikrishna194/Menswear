@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat:wght@400..700&family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    user-select: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* root */
+:root {
+    /* Colors */
+    --white-color:white;
+    --dark-color:rgb(51, 49, 49);
+    --primary-color:rgb(231, 221, 221);
+    --secondary-color:#353839;
+    --secondary-color-hover:#565a5c;
+    --button-color:linear-gradient(90deg,#2c0f12,#6b1e23);;
+    --button-hover-color:rgb(141, 125, 125); 
+    --hover-color:rgba(163, 150, 150, 1);
+    --link-hover-color:rgb(209, 8, 8);
+
+    /* --primary-color:#ffd700;
+    --primary-color:#f0eded;
+    --primary-color:#f5deb3;
+    --primary-color:#c4c3d0;
+    --primary-color:linear-gradient(90deg,#6b1e23,#2c0f12);
+    --primary-color:linear-gradient(90deg,#6b1e23,#2c0f12);
+
+    --secondary-color:#353839;
+    --secondary-color:#77a8a8;
+    --secondary-color:#36454f;
+    --secondary-color:#50222d;
+    --secondary-color:linear-gradient(90deg,#2c0f12,#6b1e23);
+    --secondary-color:linear-gradient(90deg,#2c0f12,#6b1e23); */
+
+    /* Font Size */
+    --font-size-s: 11px;
+    --font-size-ss: 13px;
+    --font-size-n: 15px;
+    --font-size-m: 17px;
+    --font-size-l: 19px;
+    --font-size-xl: 21px;
+    --font-size-xxl: 23px;
+    
+    /* Font Weight */
+    --font-weight-low:300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* Site Max-width */
+    --site-max-width: 1300px;
+}
+
+/*===== Sticky Button  */
+/* article .sticky-div {
+    padding: 5px;
+    position:relative;
+    background-color: red;
+    top: 50%;
+    display: inline;
+
+}
+article .sticky-div button{
+    color: var(--primary-color);
+    background:var(--secondary-color);
+    padding: 5px;
+    border:1px solid var(--dark-color);
+    border-radius: var(--border-radius-s);
+
+} */
+
+/*===== header =====*/
+header .top-div {
+    padding: 10px;
+    background: var(--secondary-color) ;
+    text-align:center;
+}
+header .top-div a {
+    color:var(--primary-color);
+    text-decoration:none;
+    font-size:var(--font-size-n);
+    font-weight:var(--font-weight-normal);
+    text-transform:uppercase;
+}
+header .top-div a:hover {
+    color:var(--link-hover-color);
+    text-decoration:underline;
+    transition:0.5s;
+}
+
+header .bottom-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid rgb(158, 155, 155);
+}
+.bottom-div-content ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.bottom-div-content ul li{
+    list-style: none;
+    font-size: var(--font-size-ss);
+    color: var(--dark-color);
+}
+.bottom-div-content ul li:hover{
+    cursor: pointer;
+    color: var(--link-hover-color);
+}
+.bottom-div-content ul li i{
+    color: var(--dark-color);
+}
+.bottom-div-content ul li i:hover{
+    color: var(--link-hover-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.bottom-div-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: var(--font-size-ss);
+    font-weight: var(--font-weight-normal);
+}
+.bottom-div-content a:hover{
+    text-decoration: underline;
+    color: var(--link-hover-color);
+    transition: 0.3s;
+}
+.find-store {
+    background:var(--white-color) ;
+    color: var(--secondary-color);
+    width: 20%;
+    padding: 30px;
+    position: relative;
+    left: 10%;
+    box-shadow: 0 0 4px 4px rgb(189, 181, 181);
+    z-index: 999;
+    display: none;
+    
+    
+}
+.find-store i{
+    position: relative;
+    left: 100%;
+    color: var(--secondary-color);
+}
+.find-store i:hover{
+    cursor: pointer;
+    color: var(--link-hover-color);
+    text-decoration: overline;
+    transition: 0.3s;
+}
+.find-store h5 {
+    font-size: var(--font-size-ss);
+}
+.find-store h3 {
+    font-size: var(--font-size-m);
+    color: var(--link-hover-color);
+}
+.find-store p {
+    font-size: var(--font-size-n);
+}
+.find-store button {
+    padding: 10px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border:1px solid black;
+    border-radius: var(--border-radius-s);
+    width: fit-content;
+    align-self: center;
+}
+.find-store button:hover {
+    background: var(--secondary-color-hover);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid var(--primary-color);
+
+
+}
+
+
+
+/*===== Media Quary =====*/
+
+/*----- Mobile Devices -----*/
+
+@media screen  and (max-width:767px){
+
+    header .top-div {
+        padding: 5px;
+    }
+    header .top-div a{
+        font-size:var(--font-size-s);
+        font-weight:var(--font-weight-low);
+    }
+    header .top-div .link-two{
+        display: none;
+    }
+
+    header .bottom-div {
+        padding: 5px;
+    }
+    .bottom-div-content ul{
+        gap: 7px;
+    }
+    .bottom-div-content a{
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-low);
+    }
+    .bottom-div-end-content {
+        display: none;
+    }
+    
+    .find-store {
+        width: 30%;
+        padding: 15px;
+        position: relative;
+        left: 8%;
+        
+    }
+    .find-store i{
+        position: relative;
+        left: 90%;
+    }
+    .find-store h5 {
+        font-size: var(--font-size-s);
+    }
+    .find-store h3 {
+        font-size: var(--font-size-ss);
+    }
+    .find-store p {
+        font-size: var(--font-size-s);
+        line-height: normal;
+    }
+    .find-store button {
+        padding: 5px;
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-normal);
+    }
+    
+
+    
+}
+
+
+/*----- Tablet Devices -----*/
+@media screen  and (min-width:768px) and (max-width:1023px){
+
+    header .top-div {
+        padding: 7px;
+    }
+    header .top-div a{
+        font-size:var(--font-size-s);
+        font-weight:var(--font-weight-low);
+    }
+    header .bottom-div {
+        padding: 7px;
+    }
+    .bottom-div-content ul{
+        gap: 10px;
+    }
+    .bottom-div-content a{
+        font-size: var(--font-size-ss);
+        font-weight: var(--font-weight-normal);
+    }
+    .bottom-div-end-content {
+        display: none;
+    }
+    .find-store {
+        width: 30%;
+        padding: 20px;
+        position: relative;
+        left: 13%;
+    }
+    .find-store h5 {
+        font-size: var(--font-size-n);
+    }
+    .find-store h3 {
+        font-size: var(--font-size-m);
+    }
+    .find-store p {
+        font-size: var(--font-size-n);
+        line-height: normal;
+    }
+    .find-store button {
+        padding: 5px;
+    }
+    .find-store button {
+        padding: 7px;
+        font-size: var(--font-size-ss);
+    }
+    
+    
+}
+/*----- Laptop Devices -----*/
+@media screen and (min-width:1024px) and (max-width:1439px){
+    
+}
+/* Desktop Devices */
+@media screen and (min-width:1440px){
+    
+}
