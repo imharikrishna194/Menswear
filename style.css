@@ -225,10 +225,10 @@ header .bottom-div {
     }
     
     .find-store {
-        width: 30%;
-        padding: 15px;
+        width: 40%;
+        padding: 10px;
         position: relative;
-        left: 8%;
+        left: 12%;
         
     }
     .find-store i{
@@ -315,7 +315,7 @@ header .bottom-div {
         padding: 3px;
         position: fixed;
         top: 90%;
-        left: 88%;   
+        left: 90%;   
     }
     
 }
