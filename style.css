@@ -264,7 +264,7 @@ header .bottom-div {
 
 
 /*----- Tablet Devices -----*/
-@media screen  and (min-width:568px) and (max-width:1023px){
+@media screen  and (min-width:668px) and (max-width:1023px){
 
     header .top-div {
         padding: 7px;
@@ -287,10 +287,10 @@ header .bottom-div {
         display: none;
     }
     .find-store {
-        width: 30%;
-        padding: 20px;
+        width: 50%;
+        padding: 15px;
         position: relative;
-        left: 13%;
+        left: 15%;
     }
     .find-store h5 {
         font-size: var(--font-size-n);
@@ -315,7 +315,7 @@ header .bottom-div {
         padding: 3px;
         position: fixed;
         top: 90%;
-        left: 90%;   
+        left: 88%;   
     }
     
 }
