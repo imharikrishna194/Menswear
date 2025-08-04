@@ -39,14 +39,14 @@ html {
     --secondary-color:linear-gradient(90deg,#2c0f12,#6b1e23); */
 
     /* Font Size */
-    --font-size-s: 11px;
-    --font-size-ss: 13px;
-    --font-size-n: 15px;
-    --font-size-m: 17px;
-    --font-size-l: 19px;
-    --font-size-xl: 21px;
-    --font-size-xxl: 23px;
-    
+    --font-size-s: 12px;
+    --font-size-n: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 22px;
+    --font-size-xxxl: 24px;
+   
     /* Font Weight */
     --font-weight-low:300;
     --font-weight-normal: 400;
@@ -63,19 +63,6 @@ html {
     --site-max-width: 1300px;
 }
 
-/*===== Fixed Button (FeedBack Button) */
-article .fixed-button{
-    color: var(--primary-color);
-    background:var(--secondary-color);
-    padding: 5px;
-    border:1px solid var(--dark-color);
-    border-radius: var(--border-radius-s);
-    position: fixed;
-    top: 92%;
-    left: 93%;
-    
-    
-}
 
 /*===== header =====*/
 header .top-div {
@@ -144,9 +131,8 @@ header .bottom-div {
     position: relative;
     left: 10%;
     box-shadow: 0 0 4px 4px rgb(189, 181, 181);
-    z-index: 999;
     display: none;
-    
+     z-index: 3;
     
 }
 .find-store i{
@@ -188,6 +174,85 @@ header .bottom-div {
 
 }
 
+header .header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--secondary-color) ;
+    padding: 20px;
+    z-index: 2;
+    position:relative;
+    position: fixed;
+    top: 89px;
+    width: 100%;
+}
+.header-row .header-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+header .header-row .header-column2 {
+    display: block;
+}
+header .header-row .header-column2 i{
+    padding-left:20px;
+}
+header .header-row .header-column .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase; 
+    
+}
+.header-row .header-column .content-logo{
+    color: red;
+    background-color: red;
+}
+.header-row .header-column .content-text:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.header-row .header-column h3,i{
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-normal);
+    color: var(--primary-color);
+}
+.header-row .header-column i{
+    font-size: var(--font-size-m);
+}
+.header-row .header-column .nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-normal);
+}
+.header-row .header-column .nav-links a:hover{
+    cursor: pointer;
+    color: var(--link-hover-color);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.header-row .header-column3{
+    display: none;
+}
+
+/*===== Fixed Button (FeedBack Button) */
+article .fixed-button{
+    color: var(--primary-color);
+    background:var(--secondary-color);
+    padding: 10px;
+    border:1px solid var(--dark-color);
+    border-radius: var(--border-radius-s);
+    position: fixed;
+    top: 92%;
+    left: 93%;
+    
+    
+}
 
 
 /*===== Media Quary =====*/
@@ -251,10 +316,44 @@ header .bottom-div {
         font-size: var(--font-size-s);
         font-weight: var(--font-weight-normal);
     }
+
+    header .header-row {
+        padding: 10px;
+        position:relative;
+        position: fixed;
+        top: 64px;
+        width: 100%;
+        justify-content: space-between;
+    }
     
+    header .header-row .header-column2 {
+        gap: 10px;
+        display: none;
+    }
+    header .header-row .header-column .nav-links{
+        display: none;
+    }
+    .header-row .header-column h3,i{
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-low);
+    }
+    .header-row .header-column i{
+        font-size: var(--font-size-n);
+    }
+    .header-row .header-column .nav-links a {
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-low);
+    }
+    .header-row .header-column .nav-links{
+        display: none;
+    }
+    .header-row .header-column3{
+        display: block;
+    }
+        
 /*===== Fixed Button (FeedBack Button) */
     article .fixed-button{
-        padding: 3px;
+        padding: 5px;
         position: fixed;
         top: 95%;
         left: 75%;  
@@ -310,10 +409,46 @@ header .bottom-div {
         padding: 7px;
         font-size: var(--font-size-ss);
     }
+
+    
+    header .header-row {
+        padding: 13px;
+        position:relative;
+        position: fixed;
+        top: 78px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    header .header-row .header-column2 {
+        gap: 5px;
+        display: none;
+    }
+    header .header-row .header-column .nav-links{
+        display: none;
+    }
+    .header-row .header-column h3,i{
+        font-size: var(--font-size-n);
+        font-weight: var(--font-weight-normal);
+    }
+    .header-row .header-column i{
+        font-size: var(--font-size-m);
+    }
+    .header-row .header-column .nav-links a {
+        font-size: var(--font-size-n);
+        font-weight: var(--font-weight-normal);
+    }
+    .header-row .header-column .nav-links{
+        display: none;
+    }
+    .header-row .header-column3{
+        display: block;
+    }
+      
     
     /*===== Fixed Button (FeedBack Button) */
     article .fixed-button{
-        padding: 3px;
+        padding: 10px;
         position: fixed;
         top: 90%;
         left: 90%;   
