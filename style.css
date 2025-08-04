@@ -229,6 +229,7 @@ header .bottom-div {
         padding: 10px;
         position: relative;
         left: 12%;
+        box-shadow: 0 0 2px 2px rgb(189, 181, 181);
         
     }
     .find-store i{
@@ -255,7 +256,7 @@ header .bottom-div {
     article .fixed-button{
         padding: 3px;
         position: fixed;
-        top: 90%;
+        top: 95%;
         left: 75%;  
     }
 
