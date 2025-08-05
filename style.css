@@ -338,6 +338,7 @@ article .fixed-button:hover{
         height: 100%;
         padding: 10px;
         position: relative;
+        left: 1%;
         box-shadow: 0 0 1px 1px rgb(189, 181, 181);
     }
     .find-store i{
@@ -366,7 +367,7 @@ article .fixed-button:hover{
     }
 
     header .header-row {
-        padding: 25px;
+        padding: 15px;
         position:relative;
         position: fixed;
         top: 64px;
@@ -410,7 +411,7 @@ article .fixed-button:hover{
         list-style: none;
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: column;
         
 
