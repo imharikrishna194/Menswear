@@ -210,8 +210,12 @@ header .header-row {
     align-items: center;
     text-transform: uppercase;
 }
+header .header-row .header-column2 i{
+    margin: 5px;
+    
+}
 header .header-row .header-column {
-    gap: 5px;
+    gap: 3px;
 }
 header .header-row .header-column .nav-links{
     list-style: none;
@@ -227,7 +231,7 @@ header .header-row .header-column .nav-links{
 }
 .header-row .header-column h3,i{
     font-size: var(--font-size-m);
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-bold);
     color:var(--secondary-color);
 }
 header .header-row .menu-list {
@@ -366,7 +370,7 @@ article .fixed-button:hover{
     }
 
     header .header-row {
-        padding: 15px;
+        padding: 20px;
         position:relative;
         position: fixed;
         top: 64px;
@@ -376,7 +380,8 @@ article .fixed-button:hover{
         justify-content: space-between;
     }
     .header-row .header-column .content-text{
-        font-size:var(--font-size-s);
+        font-size:var(--font-size-n);
+        font-weight: bold;
     }
     header .header-row .header-column2{
         display: none;
@@ -399,8 +404,8 @@ article .fixed-button:hover{
     } 
     header .header-row .menu-list i{
         position: absolute;
-        left:5%;
-        font-size: var(--font-size-xl);
+        left:7%;
+        font-size: var(--font-size-xxl);
         color: var(--primary-color);
     }
     header .header-row .menu-list i:hover{
@@ -450,7 +455,7 @@ article .fixed-button:hover{
         display: block;
     }
     .header-row .header-column3 i{
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-xxl);
     }
     .header-row .header-column3 i:hover{
         text-decoration: overline;
@@ -474,6 +479,10 @@ article .fixed-button:hover{
 /*----- Tablet Devices -----*/
 @media screen  and (min-width:668px) and (max-width:1023px){
 
+    .header-row .header-column .content-text{
+        font-size:var(--font-size-n);
+        font-weight: bold;
+    }
     header .top-div {
         padding: 7px;
     }
@@ -484,12 +493,22 @@ article .fixed-button:hover{
     header .bottom-div {
         padding: 7px;
     }
+    .bottom-div-links{
+        display: block;
+    }
+    .bottom-div-links i{
+        margin: 3px;
+    }
+    .bottom-div-links i:hover{
+        color: var(--link-hover-color);
+        cursor: pointer;
+    }
     .bottom-div-content ul{
         gap: 10px;
     }
     .bottom-div-content a{
-        font-size: var(--font-size-ss);
-        font-weight: var(--font-weight-normal);
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-bold);
     }
     .bottom-div-end-content {
         display: none;
@@ -520,7 +539,7 @@ article .fixed-button:hover{
 
     
     header .header-row {
-        padding: 8px;
+        padding: 20px;
         position:relative;
         position: fixed;
         top: 70px;
