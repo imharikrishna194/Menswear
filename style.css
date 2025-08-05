@@ -314,7 +314,8 @@ article .fixed-button:hover{
     }
     .find-store i{
         position: relative;
-        left: 35%;
+        left: 40%;
+        font-size: var(--font-size-n);
     }
     .find-store h5 {
         font-size: var(--font-size-s);
