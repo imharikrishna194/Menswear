@@ -39,13 +39,13 @@ html {
     --secondary-color:linear-gradient(90deg,#2c0f12,#6b1e23); */
 
     /* Font Size */
-    --font-size-s: 12px;
-    --font-size-n: 14px;
-    --font-size-m: 16px;
-    --font-size-l: 18px;
-    --font-size-xl: 20px;
-    --font-size-xxl: 22px;
-    --font-size-xxxl: 24px;
+    --font-size-s: 10px;
+    --font-size-n: 12px;
+    --font-size-m: 14px;
+    --font-size-l: 16px;
+    --font-size-xl: 18px;
+    --font-size-xxl: 20px;
+    --font-size-xxxl: 22px;
    
     /* Font Weight */
     --font-weight-low:300;
@@ -97,7 +97,7 @@ header .bottom-div {
 }
 .bottom-div-content ul li{
     list-style: none;
-    font-size: var(--font-size-ss);
+    font-size: var(--font-size-m);
     color: var(--dark-color);
 }
 .bottom-div-content ul li:hover{
@@ -106,6 +106,7 @@ header .bottom-div {
 }
 .bottom-div-content ul li i{
     color: var(--dark-color);
+    font-size: var(--font-size-m);
 }
 .bottom-div-content ul li i:hover{
     color: var(--link-hover-color);
@@ -115,7 +116,7 @@ header .bottom-div {
 .bottom-div-content a{
     text-decoration: none;
     color: var(--dark-color);
-    font-size: var(--font-size-ss);
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-normal);
 }
 .bottom-div-content a:hover{
@@ -126,18 +127,21 @@ header .bottom-div {
 .find-store {
     background:var(--white-color) ;
     color: var(--secondary-color);
-    width: 20%;
-    padding: 30px;
+    width: 18%;
+    padding: 15px;
     position: relative;
     left: 10%;
-    box-shadow: 0 0 4px 4px rgb(189, 181, 181);
+    top: -5px;
+    box-shadow: 0 0 2px 2px rgb(189, 181, 181);
     display: none;
-     z-index: 3;
+    z-index: 3;
+    text-align: center;
+    border-radius: var(--border-radius-s);
     
 }
 .find-store i{
     position: relative;
-    left: 100%;
+    left: 40%;
     color: var(--secondary-color);
 }
 .find-store i:hover{
@@ -147,7 +151,7 @@ header .bottom-div {
     transition: 0.3s;
 }
 .find-store h5 {
-    font-size: var(--font-size-ss);
+    font-size: var(--font-size-n);
 }
 .find-store h3 {
     font-size: var(--font-size-m);
@@ -157,13 +161,16 @@ header .bottom-div {
     font-size: var(--font-size-n);
 }
 .find-store button {
-    padding: 10px;
+    padding: 5px;
+    width: 100%;
     background: var(--secondary-color);
     color: var(--primary-color);
     border:1px solid black;
     border-radius: var(--border-radius-s);
-    width: fit-content;
+    /* width: fit-content; */
     align-self: center;
+    font-size: var(--font-size-s);
+    margin-top: 5px;
 }
 .find-store button:hover {
     background: var(--secondary-color-hover);
@@ -180,11 +187,11 @@ header .header-row {
     align-items: center;
     justify-content: space-around;
     background: var(--secondary-color) ;
-    padding: 20px;
+    padding: 15px;
     z-index: 2;
     position:relative;
     position: fixed;
-    top: 89px;
+    top: 90px;
     width: 100%;
 }
 .header-row .header-column {
@@ -217,7 +224,7 @@ header .header-row .header-column .nav-links{
     text-decoration: underline;
 }
 .header-row .header-column h3,i{
-    font-size: var(--font-size-n);
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-normal);
     color: var(--primary-color);
 }
@@ -240,18 +247,24 @@ header .header-row .header-column .nav-links{
     display: none;
 }
 
+
 /*===== Fixed Button (FeedBack Button) */
 article .fixed-button{
     color: var(--primary-color);
     background:var(--secondary-color);
-    padding: 10px;
+    padding: 8px;
     border:1px solid var(--dark-color);
     border-radius: var(--border-radius-s);
     position: fixed;
     top: 92%;
-    left: 93%;
-    
-    
+    left: 93%;    
+}
+article .fixed-button:hover{
+    background: var(--secondary-color-hover);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid var(--primary-color);
+
 }
 
 
@@ -273,7 +286,7 @@ article .fixed-button{
     }
 
     header .bottom-div {
-        padding: 5px;
+        padding: 8px;
     }
     .bottom-div-content ul{
         gap: 7px;
@@ -281,40 +294,46 @@ article .fixed-button{
     .bottom-div-content ul li{
         font-size: var(--font-size-s);
     }
+    .bottom-div-content ul li i{
+        font-size: var(--font-size-s);
+    }
     .bottom-div-content a{
         font-size: var(--font-size-s);
-        font-weight: var(--font-weight-low);
+        font-weight: var(--font-weight-bold);
     }
     .bottom-div-end-content {
         display: none;
     }
     
     .find-store {
-        width: 40%;
+        width: 30%;
         padding: 10px;
         position: relative;
-        left: 12%;
-        box-shadow: 0 0 2px 2px rgb(189, 181, 181);
-        
+        left: 15%;
+        box-shadow: 0 0 1px 1px rgb(189, 181, 181);
     }
     .find-store i{
         position: relative;
-        left: 90%;
+        left: 35%;
     }
     .find-store h5 {
         font-size: var(--font-size-s);
+        font-weight: var(--font-weight-low);
     }
     .find-store h3 {
-        font-size: var(--font-size-ss);
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-normal);
     }
     .find-store p {
         font-size: var(--font-size-s);
+        font-weight: var(--font-weight-low);
         line-height: normal;
     }
     .find-store button {
-        padding: 5px;
-        font-size: var(--font-size-s);
-        font-weight: var(--font-weight-normal);
+        padding: 2px;
+        font-size: 8px;
+        font-weight: var(--font-weight-low);
+        margin-bottom: 5px;
     }
 
     header .header-row {
@@ -350,13 +369,22 @@ article .fixed-button{
     .header-row .header-column3{
         display: block;
     }
+    .header-row .header-column3 i{
+        font-size: var(--font-size-l);
+    }
+    .header-row .header-column3 i:hover{
+        text-decoration: overline;
+        color: var(--link-hover-color);
+        transition: 0.3s;
+        cursor: pointer;
+    }
         
 /*===== Fixed Button (FeedBack Button) */
     article .fixed-button{
         padding: 5px;
         position: fixed;
-        top: 95%;
-        left: 75%;  
+        top: 93%;
+        left: 93%;  
     }
 
     
@@ -387,39 +415,38 @@ article .fixed-button{
         display: none;
     }
     .find-store {
-        width: 50%;
-        padding: 15px;
+        width: 30%;
+        padding: 10px;
         position: relative;
         left: 15%;
     }
     .find-store h5 {
-        font-size: var(--font-size-n);
+        font-size: var(--font-size-s);
     }
     .find-store h3 {
-        font-size: var(--font-size-m);
+        font-size: var(--font-size-n);
     }
     .find-store p {
-        font-size: var(--font-size-n);
+        font-size: var(--font-size-s);
         line-height: normal;
     }
     .find-store button {
-        padding: 5px;
+        padding: 3px;
     }
     .find-store button {
-        padding: 7px;
-        font-size: var(--font-size-ss);
+        padding: 5px;
+        font-size: var(--font-size-s);
     }
 
     
     header .header-row {
-        padding: 13px;
+        padding: 8px;
         position:relative;
         position: fixed;
-        top: 78px;
+        top: 70px;
         width: 100%;
         justify-content: space-around;
     }
-    
     header .header-row .header-column2 {
         gap: 5px;
         display: none;
@@ -448,10 +475,10 @@ article .fixed-button{
     
     /*===== Fixed Button (FeedBack Button) */
     article .fixed-button{
-        padding: 10px;
+        padding: 8px;
         position: fixed;
         top: 90%;
-        left: 90%;   
+        left: 95%;   
     }
     
 }
