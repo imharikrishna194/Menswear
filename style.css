@@ -376,6 +376,9 @@ article .fixed-button:hover{
         flex-direction: row-reverse;
         justify-content: space-between;
     }
+    .header-row .header-column h3{
+        font-size:var(--font-size-s);
+    }
     header .header-row .header-column2{
         display: none;
     }
@@ -397,7 +400,7 @@ article .fixed-button:hover{
     } 
     header .header-row .menu-list i{
         position: absolute;
-        left:8%;
+        left:5%;
         font-size: var(--font-size-xl);
         color: var(--primary-color);
     }
@@ -411,7 +414,7 @@ article .fixed-button:hover{
         list-style: none;
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column;
         
 
