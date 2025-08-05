@@ -306,10 +306,10 @@ article .fixed-button:hover{
     }
     
     .find-store {
-        width: 30%;
+        width: 40%;
         padding: 10px;
         position: relative;
-        left: 15%;
+        left: 12%;
         box-shadow: 0 0 1px 1px rgb(189, 181, 181);
     }
     .find-store i{
@@ -383,8 +383,8 @@ article .fixed-button:hover{
     article .fixed-button{
         padding: 5px;
         position: fixed;
-        top: 93%;
-        left: 93%;  
+        top: 95%;
+        left: 90%;  
     }
 
     
