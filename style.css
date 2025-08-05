@@ -17,6 +17,7 @@ html {
     --white-color:white;
     --dark-color:rgb(51, 49, 49);
     --primary-color:rgb(231, 221, 221);
+    --another-color:#f5deb3;
     --secondary-color:#353839;
     --secondary-color-hover:#565a5c;
     --button-color:linear-gradient(90deg,#2c0f12,#6b1e23);;
@@ -71,16 +72,22 @@ header .top-div {
     text-align:center;
 }
 header .top-div a {
-    color:var(--primary-color);
+    color:var(--another-color);
     text-decoration:none;
     font-size:var(--font-size-n);
     font-weight:var(--font-weight-normal);
     text-transform:uppercase;
 }
+header .top-div a i{
+    color: var(--another-color);
+}
 header .top-div a:hover {
     color:var(--link-hover-color);
     text-decoration:underline;
     transition:0.5s;
+}
+header .top-div a i:hover{
+    color:var(--link-hover-color);
 }
 
 header .bottom-div {
@@ -89,6 +96,10 @@ header .bottom-div {
     justify-content: space-around;
     padding: 10px;
     border-bottom: 1px solid rgb(158, 155, 155);
+    background:var(--another-color);
+}
+.bottom-div-links{
+    display: none;
 }
 .bottom-div-content ul{
     display: flex;
@@ -186,8 +197,8 @@ header .header-row {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background: var(--secondary-color) ;
-    padding: 15px;
+    background: transparent ;
+    padding: 20px;
     z-index: 2;
     position:relative;
     position: fixed;
@@ -200,22 +211,14 @@ header .header-row {
     align-items: center;
     text-transform: uppercase;
 }
-header .header-row .header-column2 {
-    display: block;
-}
-header .header-row .header-column2 i{
-    padding-left:20px;
+header .header-row .header-column {
+    gap: 5px;
 }
 header .header-row .header-column .nav-links{
     list-style: none;
     display: flex;
     gap: 40px;
     text-transform: uppercase; 
-    
-}
-.header-row .header-column .content-logo{
-    color: red;
-    background-color: red;
 }
 .header-row .header-column .content-text:hover{
     cursor: pointer;
@@ -226,14 +229,17 @@ header .header-row .header-column .nav-links{
 .header-row .header-column h3,i{
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-normal);
-    color: var(--primary-color);
+    color:var(--secondary-color);
+}
+header .header-row .menu-list {
+    display: none;
 }
 .header-row .header-column i{
     font-size: var(--font-size-m);
 }
 .header-row .header-column .nav-links a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: var(--font-size-n);
     font-weight: var(--font-weight-normal);
 }
@@ -258,6 +264,9 @@ article .fixed-button{
     position: fixed;
     top: 92%;
     left: 93%;    
+}
+article .fixed-button i{
+    color: var(--primary-color);
 }
 article .fixed-button:hover{
     background: var(--secondary-color-hover);
@@ -286,7 +295,17 @@ article .fixed-button:hover{
     }
 
     header .bottom-div {
-        padding: 8px;
+        padding: 5px;
+    }
+    .bottom-div-links{
+        display: block;
+    }
+    .bottom-div-links i{
+        margin: 3px;
+    }
+    .bottom-div-links i:hover{
+        color: var(--link-hover-color);
+        cursor: pointer;
     }
     .bottom-div-content ul{
         gap: 7px;
@@ -301,9 +320,18 @@ article .fixed-button:hover{
         font-size: var(--font-size-s);
         font-weight: var(--font-weight-bold);
     }
+    .bottom-div-content a i{
+        font-size: var(--font-size-s);
+    }
+    .bottom-div-content i:hover{
+        cursor: pointer;
+        color: var(--link-hover-color);
+    }
     .bottom-div-end-content {
         display: none;
     }
+    
+    
     
     .find-store {
         width: 50%;
@@ -338,24 +366,73 @@ article .fixed-button:hover{
     }
 
     header .header-row {
-        padding: 10px;
+        padding: 25px;
         position:relative;
         position: fixed;
         top: 64px;
         width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
     }
-    
-    header .header-row .header-column2 {
-        gap: 10px;
+    header .header-row .header-column2{
         display: none;
     }
     header .header-row .header-column .nav-links{
         display: none;
     }
-    .header-row .header-column h3,i{
-        font-size: var(--font-size-s);
+    header .header-row .menu-list{
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 5%;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+        padding: 20px;
+        height: 95vh;
+        width: 80%;
+        left: -100%;
+        transition: 0.5s;
+    } 
+    header .header-row .menu-list i{
+        position: absolute;
+        left:8%;
+        font-size: var(--font-size-xl);
+        color: var(--primary-color);
+    }
+    header .header-row .menu-list i:hover{
+        color: var(--hover-color);
+        cursor: pointer;
+        text-decoration: overline;
+        transition: 0.3s;
+    }
+    header .header-row .menu-list .nav-links{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        
+
+        
+    }
+    .header-row .menu-list .nav-links a {
+        font-size: var(--font-size-n);
         font-weight: var(--font-weight-low);
+        text-decoration: none;
+        color: var(--primary-color);
+        text-transform: uppercase;
+    }
+    .header-row .menu-list .nav-links a:hover{
+        text-decoration: overline;
+        color: var(--link-hover-color);
+        transition: 0.3s;
+        cursor: pointer;
+
+    } 
+    .header-row .header-column h3,i{
+        font-size: var(--font-size-n);
+        font-weight: var(--font-weight-normal);
     }
     .header-row .header-column i{
         font-size: var(--font-size-n);
@@ -371,7 +448,7 @@ article .fixed-button:hover{
         display: block;
     }
     .header-row .header-column3 i{
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-xl);
     }
     .header-row .header-column3 i:hover{
         text-decoration: overline;
