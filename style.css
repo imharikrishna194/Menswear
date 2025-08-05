@@ -152,7 +152,7 @@ header .bottom-div {
 }
 .find-store h5 {
     font-size: var(--font-size-n);
-}
+} 
 .find-store h3 {
     font-size: var(--font-size-m);
     color: var(--link-hover-color);
@@ -306,33 +306,33 @@ article .fixed-button:hover{
     }
     
     .find-store {
-        width: 40%;
+        width: 50%;
+        height: 100%;
         padding: 10px;
         position: relative;
-        left: 12%;
         box-shadow: 0 0 1px 1px rgb(189, 181, 181);
     }
     .find-store i{
         position: relative;
         left: 40%;
-        font-size: var(--font-size-n);
+        font-size: var(--font-size-m);
     }
     .find-store h5 {
-        font-size: var(--font-size-s);
+        font-size: var(--font-size-n);
         font-weight: var(--font-weight-low);
     }
     .find-store h3 {
-        font-size: var(--font-size-s);
+        font-size: var(--font-size-n);
         font-weight: var(--font-weight-normal);
     }
     .find-store p {
-        font-size: var(--font-size-s);
+        font-size: var(--font-size-n);
         font-weight: var(--font-weight-low);
         line-height: normal;
     }
     .find-store button {
-        padding: 2px;
-        font-size: 8px;
+        padding: 5px;
+        font-size:var(--font-size-s);
         font-weight: var(--font-weight-low);
         margin-bottom: 5px;
     }
