@@ -734,7 +734,7 @@ header .navbar{
     left: -100%;
     gap: 0px;
     padding: 20px;
-    width: 65%;
+    width: 85%;
     height: 100vh;
     background:var(--secondary-color) ;
     transition: 0.5s;
@@ -765,7 +765,6 @@ header .navbar{
 }
 .navbar .menu-div{
     display: block;
-    z-index: 3;
 }
 .navbar .menu-div i{
     color: var(--white-color);
