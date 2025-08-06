@@ -758,13 +758,16 @@ header .navbar{
     font-weight: var(--font-weight-normal);
 }
 .navbar .navbar-logo a{
-    font-size: var(--font-size-n);
+    font-size: var(--font-size-s);
 }
 .navbar .social-links{
     display: none;  
 }
 .navbar .menu-div{
     display: block;
+}
+.navbar .menu-div i{
+    color: var(--white-color);
 }
 header .main-video video{
     position: absolute;
