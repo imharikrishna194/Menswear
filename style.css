@@ -765,6 +765,7 @@ header .navbar{
 }
 .navbar .menu-div{
     display: block;
+    z-index: 3;
 }
 .navbar .menu-div i{
     color: var(--white-color);
