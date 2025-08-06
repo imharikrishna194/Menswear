@@ -718,6 +718,12 @@ header .navbar{
     justify-content: space-between;
     flex-direction: row-reverse;
 }
+.navbar .navbar-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .navbar .nav-links{
     display: flex;
     flex-direction: column;
@@ -747,7 +753,7 @@ header .navbar{
     cursor: pointer;
 }
 .navbar .nav-links li a{
-    color: var(--primary-color);
+    color:var(--white-color);
     font-size: var(--font-size-n);
     font-weight: var(--font-weight-normal);
 }
