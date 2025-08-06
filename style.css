@@ -141,7 +141,9 @@ header .navbar{
 .navbar .menu-div i{
     color:var(--white-color);
     font-size: var(--font-size-xl);
-    width: 300px;
+    margin: 5px;
+    padding: 3px;
+    
 }
 .navbar .menu-div i:hover{
     cursor: pointer;
@@ -758,7 +760,7 @@ header .navbar{
     font-weight: var(--font-weight-normal);
 }
 .navbar .navbar-logo a{
-    font-size: var(--font-size-n);
+    font-size: var(--font-size-s);
 }
 .navbar .social-links{
     display: none;  
@@ -768,6 +770,7 @@ header .navbar{
 }
 .navbar .menu-div i{
     color: var(--white-color);
+    
 }
 header .main-video video{
     position: absolute;
