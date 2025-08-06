@@ -140,7 +140,7 @@ header .navbar{
 }
 .navbar .menu-div i{
     color:var(--white-color);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-xxxl);
     margin: 5px;
     padding: 3px;
     
@@ -743,11 +743,12 @@ header .navbar{
 }
 .navbar .nav-links .menu-close-button{
     display: block;
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xxxl);
     color: var(--primary-color);
     position: absolute;
     top: 2%;
     left: 5%;
+    margin: 5px;
 
 }
 .navbar .nav-links .menu-close-button:hover{
@@ -760,7 +761,7 @@ header .navbar{
     font-weight: var(--font-weight-normal);
 }
 .navbar .navbar-logo a{
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-n);
 }
 .navbar .social-links{
     display: none;  
