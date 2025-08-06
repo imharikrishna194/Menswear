@@ -758,7 +758,7 @@ header .navbar{
     font-weight: var(--font-weight-normal);
 }
 .navbar .navbar-logo a{
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-n);
 }
 .navbar .social-links{
     display: none;  
