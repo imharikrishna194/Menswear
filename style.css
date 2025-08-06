@@ -63,10 +63,105 @@ html {
     /* Site Max-width */
     --site-max-width: 1300px;
 }
+header {
+    position: relative;
+    display: inline;
+}
+header .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: transparent;
+    position: sticky;
+    top:0px;
+    z-index: 2;
+}
+.navbar .nav-links{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 30px;
+}
+.navbar .nav-links li a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-bold);
+}
+.navbar .navbar-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar .navbar-logo a{
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);  
+    text-transform: uppercase;
+}
+.navbar .social-links a{
+    color:var(--white-color);
+}
+.navbar .social-links a i{
+    margin: 5px;   
+}
+.navbar .nav-links li a:hover{
+    color: var(--link-hover-color);
+    transition: 0.3s;
+    text-decoration: overline;    
+}
+.navbar .nav-links .menu-close-button{
+    display: none;
+}
+.navbar-logo svg:hover{
+    fill:yellow;
+    transition: 0.3s;
+    color:var(--link-hover-color);
+    cursor: pointer;
+}
+.navbar .navbar-logo a:hover{
+    color: var(--link-hover-color);
+    transition: 0.3s;  
+}
+.navbar .social-links a:hover{
+    cursor: pointer;
+    color: var(--link-hover-color);
+    transition: 0.3s; 
+    border:1px var(--white-color) solid;
+    border-radius: 50%;
+    transition: 0.5s;
+      
+}
+.navbar .menu-div{
+    display: none;
+}
+.navbar .menu-div i{
+    color:var(--white-color);
+    font-size: var(--font-size-xl);
+    width: 300px;
+}
+.navbar .menu-div i:hover{
+    cursor: pointer;
+    color: var(--link-hover-color);
+    transition: 0.3s;
+}
 
+header .main-video video{
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+
+
+    
+}
+
+/* ===================================== */
 
 /*===== header =====*/
-header .top-div {
+/* header .top-div {
     padding: 10px;
     background: var(--secondary-color) ;
     text-align:center;
@@ -178,7 +273,7 @@ header .bottom-div {
     color: var(--primary-color);
     border:1px solid black;
     border-radius: var(--border-radius-s);
-    /* width: fit-content; */
+
     align-self: center;
     font-size: var(--font-size-s);
     margin-top: 5px;
@@ -196,7 +291,6 @@ header{
     position: relative;
     display: inline;
 }
- 
 header .header-row {
     display: flex;
     flex-direction: row;
@@ -207,7 +301,7 @@ header .header-row {
     z-index: 2;
     width: 100%;
     position: sticky;
-    top:0px;
+    top:10px;
     
 }
 .header-row .header-column {
@@ -271,17 +365,23 @@ section .home-section{
     
 }
 
-section .home-section video{
-       position: absolute;
-       top: 15%;
+.home-section video::before{
        width: 100%;
        height: 100%;
        object-fit: cover;
+       background-attachment: fixed;
     
     }
+    
+.home-section video::after{
+    position: absolute;
+       width: 100%;
+       height: 100%;
+    
+    } */
 
 /*===== Fixed Button (FeedBack Button) */
-article .fixed-button{
+/* article .fixed-button{
     color: var(--primary-color);
     background:var(--secondary-color);
     padding: 8px;
@@ -300,16 +400,13 @@ article .fixed-button:hover{
     transition: 0.3s;
     border: 1px solid var(--primary-color);
 
-}
-
+} */
 
 /*===== Media Quary =====*/
-
 /*----- Mobile Devices -----*/
+/* @media screen  and (max-width:767px){
 
-@media screen  and (max-width:767px){
-
-    /* Header Top */
+    
     header .top-div {
         padding: 5px;
     }
@@ -321,7 +418,6 @@ article .fixed-button:hover{
         display: none;
     }
 
-    /* Header Bottom */
     header .bottom-div {
         padding: 5px;
     }
@@ -359,8 +455,6 @@ article .fixed-button:hover{
         display: none;
     }
     
-    
-    /* Find store */
     .find-store {
         width: 50%;
         padding: 10px;
@@ -394,7 +488,6 @@ article .fixed-button:hover{
         margin-bottom: 5px;
     }
 
-    /* Header NavBar */
     .header-row .header-column .content-text{
         font-size:var(--font-size-n);
         font-weight: bold;
@@ -480,7 +573,7 @@ article .fixed-button:hover{
         cursor: pointer;
     }
         
-/*===== Fixed Button (FeedBack Button) */
+
     article .fixed-button{
         padding: 5px;
         position: fixed;
@@ -490,20 +583,27 @@ article .fixed-button:hover{
     
 
 
-    /*===== Home ======*/
-    section .home-section video{
-       position: absolute;
-       top: 10%;
-       
+
+    .home-section video::before{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       background-attachment: fixed;
     
     }
     
+.home-section video::after{
+    position: absolute;
+       width: 100%;
+       height: 100%;
     
-}
-
-
+    }
+   
+    
+    
+} */
 /*----- Tablet Devices -----*/
-@media screen  and (min-width:668px) and (max-width:1023px){
+/* @media screen  and (min-width:767px) and (max-width:1023px){
 
     .header-row .header-column .content-text{
         font-size:var(--font-size-n);
@@ -563,9 +663,6 @@ article .fixed-button:hover{
         padding: 5px;
         font-size: var(--font-size-s);
     }
-
-    
-    
     header .header-row .header-column2 {
         gap: 5px;
         display: none;
@@ -590,9 +687,7 @@ article .fixed-button:hover{
     .header-row .header-column3{
         display: block;
     }
-      
-    
-    /*===== Fixed Button (FeedBack Button) */
+
     article .fixed-button{
         padding: 8px;
         position: fixed;
@@ -600,12 +695,97 @@ article .fixed-button:hover{
         left: 95%;   
     }
     
+} */
+/*----- Laptop Devices -----*/
+/* @media screen and (min-width:1024px) and (max-width:1439px){
+    
+} */
+/* Desktop Devices */
+/* @media screen and (min-width:1440px){
+    
+} */
+
+
+
+
+/*===== Media Quary =====*/
+
+/*----- Mobile Devices -----*/
+@media only screen  and (max-width:767px){
+    /* Header Navbar */
+header .navbar{
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.navbar .nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    gap: 0px;
+    padding: 20px;
+    width: 65%;
+    height: 100vh;
+    background:var(--secondary-color) ;
+    transition: 0.5s;
+}
+.navbar .nav-links .menu-close-button{
+    display: block;
+    font-size: var(--font-size-xxl);
+    color: var(--primary-color);
+    position: absolute;
+    top: 2%;
+    left: 5%;
+
+}
+.navbar .nav-links .menu-close-button:hover{
+    color: var(--link-hover-color);
+    cursor: pointer;
+}
+.navbar .nav-links li a{
+    color: var(--primary-color);
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-normal);
+}
+.navbar .navbar-logo a{
+    font-size: var(--font-size-n);
+}
+.navbar .social-links{
+    display: none;  
+}
+.navbar .menu-div{
+    display: block;
+}
+header .main-video video{
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+
+
+    
+}
+
+
+}
+    
+    
+/*----- Tablet Devices -----*/
+@media only screen  and (min-width:768px) and (max-width:1023px){
+
+
+
 }
 /*----- Laptop Devices -----*/
-@media screen and (min-width:1024px) and (max-width:1439px){
+@media only screen and (min-width:1024px) and (max-width:1439px){
     
 }
 /* Desktop Devices */
-@media screen and (min-width:1440px){
+@media only screen and (min-width:1440px){
     
 }
