@@ -17,11 +17,37 @@
 </head>
 <body>
 
+    <!-- Article -->
+    <article>
+        <div class="top-div">
+            <a href="#" class="link-one">Clearance Up To 70% Off Original Prices </a>
+            <a href="#" class="link-two"> | <i class="fa fa-shopping-cart"></i> Shop Now ></a>
+        </div>
+        <div class="bottom-div">
+            <div class="bottom-div-content ">
+                <ul>
+                    <li><i class="fa fa-map-marker-alt"></i></li>
+                    <li><p href="#" onclick="clk()">Find a Store</p></li>
+                </ul>              
+            </div>            
+            <div class="bottom-div-content bottom-div-end-content">
+                <a href="#">Sign up for texts and get $20 off $100+ instantly! </a>
+            </div>  
+            <div class="bottom-div-links">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-bag"></i>
+            </div>      
+            <div class="bottom-div-content">
+                    <a href="#">Sign In</a>    
+                    <i class="fa fa-sign-in"></i>                         
+            </div>             
+        </div>
+
+    </article>
+
     <!-- Header -->
-
-
-    <header>
-       
+    <header>             
         <nav class="navbar">
             <div class="navbar-logo">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="28px" height="28px" viewBox="0 0 24 24" stroke-width="1.5" fill="white" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M5.81249 7C5.81249 7 5.35861 7.62759 4.81552 8.66667M18.1875 7C18.1875 7 18.6414 7.62759 19.1845 8.66667M4.81552 8.66667C4.0067 10.2142 3 12.6743 3 15.3333C5.8125 15.3333 7.49999 17 7.49999 17C7.49999 17 8.62499 22 12 22C15.375 22 16.5 17 16.5 17C16.5 17 18.1875 15.3333 21 15.3333C21 12.6743 19.9933 10.2142 19.1845 8.66667M4.81552 8.66667C4.81552 8.66667 1.875 6.44436 4.81552 2C5.81249 2.55556 8.625 4.77778 8.625 4.77778C8.625 4.77778 10.3125 3.66667 12 3.66667C13.6875 3.66667 15.375 4.77778 15.375 4.77778C15.375 4.77778 18.1875 2.55556 19.3125 2C22.125 6.44456 19.1845 8.66667 19.1845 8.66667" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 18L12 18M13 18L12 18M12 18L12 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 12.5L10 14" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 12.5L14 14" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><a href="#" class="logo">gt-menswear'house</a>
@@ -44,12 +70,56 @@
             <div class="menu-div">
                 <i class="fa fa-bars" onclick="menuOpenButton()"></i>
             </div>
-        </nav>
+        </nav> 
         <div class="main-video">
-            <video autoplay loop muted src="assetsNew/mainVideo.mp4" width="100%"></video>
+            <video class="background-clip" width="100%">
+                <source src="assetsNew/mainVideo.mp4" type="video/mp4">
+                <!-- autoplay loop muted playes-inline          -->
         </div>
-        
+        <div class="main-content">
+            <h3>The Sharp Cut Sale</h3>
+            <div class="main-button">
+                <a href="#"><button>upto 60% off</button></a>
+                <a href="#"><button>Rs 1999store</button></a>
+            </div>
+        </div>
+          
     </header>
+
+    <main>
+        <section class="size-section">
+            <h3>shop by size </h3>
+            <div class="size-div">
+                <div class="tittle" onclick="viewButtonSection1()"><h3>Top Wear</h3></div>
+                <div class="tittle" onclick="viewButtonSection2()"><h3>Bottom Wear</h3></div>
+            </div>
+            <div class="size-buttons">
+                <div class="button-section1 button-section">
+                    <a href="#"><button>XS</button></a>
+                    <a href="#"><button>S</button></a>
+                    <a href="#"><button>M</button></a>
+                    <a href="#"><button>L</button></a>
+                    <a href="#"><button>XL</button></a>
+                    <a href="#"><button>XXL</button></a>
+                    <a href="#"><button>3XL</button></a>
+                </div>
+                <div class="button-section2 button-section" >
+                    <a href="#"><button>28</button></a>
+                    <a href="#"><button>30</button></a>
+                    <a href="#"><button>32</button></a>
+                    <a href="#"><button>34</button></a>
+                    <a href="#"><button>36</button></a>
+                    <a href="#"><button>38</button></a>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
+    
+    
     
     
 
@@ -144,7 +214,7 @@
     
     <!-- <article>
             <a href="#"><button class="fixed-button"><i class="fa fa-angle-double-up"></i></button></a>
-    </article>
+    </article> -->
 
      <div class="find-store">
             <i class="fa fa-times" onclick="clkRemove()"></i>
@@ -152,7 +222,7 @@
                     <h3>Find Your Nearest Store :</h3>
                     <p>Discover one of our 600+ stores worldwide for customizations, fitting & styling advice.</p>
                     <a href="#" target="_blank"><button>Find Store</button></a>
-    </div> -->
+    </div> 
     
 
 

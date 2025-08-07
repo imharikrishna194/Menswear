@@ -1,10 +1,10 @@
-// var divBox = document.querySelector(".find-store")
-// function clk() {
-//     divBox.style.display="block"
-// }
-// function clkRemove(){
-//     divBox.style.display="none"
-// }
+var divBox = document.querySelector(".find-store")
+function clk() {
+    divBox.style.display="block"
+}
+function clkRemove(){
+    divBox.style.display="none"
+}
 
 var menuList = document.querySelector(".nav-links")
 function menuOpenButton() { 
@@ -15,3 +15,17 @@ function menuCloseButton(){
     menuList.style.left="-100%";
 }
 
+
+var sizeButtonSection2 = document.querySelector(".button-section2");
+var sizeButtonSection1 =  document.querySelector(".button-section1");
+
+function viewButtonSection2() { 
+    sizeButtonSection2.style.display="block" ;
+    sizeButtonSection1.style.display="none"
+
+}
+function viewButtonSection1(){
+    sizeButtonSection1.style.display="block" ;
+    sizeButtonSection2.style.display="none" ;
+    
+}
