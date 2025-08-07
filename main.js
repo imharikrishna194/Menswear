@@ -1,6 +1,7 @@
 var divBox = document.querySelector(".find-store")
 function clk() {
     divBox.style.display="block"
+    divBox.style.transform= translateY("-100px");
 }
 function clkRemove(){
     divBox.style.display="none"

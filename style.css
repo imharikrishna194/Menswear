@@ -481,6 +481,7 @@ main .size-section .size-buttons .button-section2{
         right: 0;
         box-shadow: 0 0 1px 1px rgb(189, 181, 181);
         text-align: center;
+        transition: 0.8s;
     }
     .find-store i{
         /* position: relative;
