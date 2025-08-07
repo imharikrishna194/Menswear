@@ -577,7 +577,7 @@ header .main-video .background-clip{
 }
 header .main-video{
     background: transparent;
-    height:90vh; 
+    height:98vh; 
     object-fit: cover; 
 }
 /* Header Main-Content */
