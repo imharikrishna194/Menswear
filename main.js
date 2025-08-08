@@ -1,4 +1,4 @@
-var divBox = document.querySelector(".find-store")
+const divBox = document.querySelector(".find-store")
 function clk() {
     divBox.style.display="block"
     divBox.style.transform= translateY("-100px");
@@ -7,7 +7,7 @@ function clkRemove(){
     divBox.style.display="none"
 }
 
-var menuList = document.querySelector(".nav-links")
+const menuList = document.querySelector(".nav-links")
 function menuOpenButton() { 
     menuList.style.left="-1%" ;
 }
@@ -17,8 +17,8 @@ function menuCloseButton(){
 }
 
 
-var sizeButtonSection2 = document.querySelector(".button-section2");
-var sizeButtonSection1 =  document.querySelector(".button-section1");
+const sizeButtonSection2 = document.querySelector(".button-section2");
+const sizeButtonSection1 =  document.querySelector(".button-section1");
 
 function viewButtonSection2() { 
     sizeButtonSection2.style.display="block" ;
