@@ -420,6 +420,45 @@ main .size-section .size-buttons .button-section2{
     display: none;
 }
 
+/*===== Global Section ===== */
+.globel-section .section-tittle{
+    font-size: var(--font-size-m);
+    padding-bottom:0px;
+}
+.globel-section .globel-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.globel-section .globel-row .globel-column{
+    width: 30%;
+    padding: 30px;
+    margin: 5px;
+    background:var(--white-color) ;
+    text-align: center;
+}
+.globel-section .section-tittle{
+    font-size: var(--font-size-m);
+    padding-bottom:0px;
+}
+.globel-section .globel-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.globel-section .globel-row .globel-column img:hover{
+    cursor: pointer;
+}
+.globel-section .globel-row .globel-column img{
+    width: 60%;
+    border-radius: var(--border-radius-s);
+
+}
+
 /*===== AllCategories ===== */
 .section-tittle{
     text-align: center;
@@ -450,8 +489,20 @@ main .size-section .size-buttons .button-section2{
 .allcategories-section .all-row .all-column img{
     width: 100%;
     border-radius: var(--border-radius-s);
-    transition: transform 0.6s;
+
 }
+
+
+/*===== Special Coupon Img  */
+/* .coupon-section {
+    display: flex;
+}
+.coupon-section .coupon-div{
+    text-align: center;
+} 
+.coupon-section .coupon-div img{
+    width: 100%;
+} */
 
 
 /*===== Collection Section ======*/
@@ -480,11 +531,14 @@ main .size-section .size-buttons .button-section2{
     border-radius: var(--border-radius-s);
     transition: transform 0.6s;
 }
-/* .collection-section .collection-row .collection-column img:hover{
-    transform: scale(1.1);
-} */
+.collection-section .collection-row .collection-column img:hover{
+    transform: translateY(-10px);
+}
 .collection-section .collection-row .collection-column .tittle{
     font-size: var(--font-size-l);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .collection-section .collection-row .collection-column small{
     color: var(--strike-color);
@@ -690,7 +744,7 @@ main .size-section{
     padding: 10px;
 }
 main .size-section h3{
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
 }
 main .size-section .size-div{
     padding: 1px;
@@ -714,7 +768,37 @@ main .size-section .size-buttons .button-section a button{
     font-weight: var(--font-weight-medium);
 }
 
+/*===== Global Section ===== */
+.globel-section .section-tittle{
+    font-size: var(--font-size-m);
+}
+.globel-section .globel-row{
+    padding: 5px;
+}
+.globel-section .globel-row .globel-column{
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+}
+.globel-section .section-tittle{
+    font-size: var(--font-size-n);
+}
+.globel-section .globel-row{
+    padding: 5px;
+}
+.globel-section .globel-row .globel-column img{
+    width: 100%;
+
+}
+
+
+
 /*===== AllCategories ===== */
+.section-tittle{
+    font-size: var(--font-size-xl);
+    padding: 5px;
+    font-weight: var(--font-weight-bold);
+}
 .allcategories-section {
     padding: 5px;
 }
@@ -725,19 +809,16 @@ main .size-section .size-buttons .button-section a button{
     width: 100%;
 }
 
-
-
-
-
 /*===== Collection Section ======*/
 .collection-section {
-    padding: 5px;
+    padding: 8px;
 }
 .collection-section .collection-row{
-    padding: 5px;
+    padding: 10px;
 }
 .collection-section .collection-row .collection-column{
     width: 45%;
+
     padding: 5px;
     margin: 5px;
 }
@@ -747,6 +828,9 @@ main .size-section .size-buttons .button-section a button{
 }
 .collection-section .collection-row .collection-column .tittle{
     font-size: var(--font-size-n);
+}
+.collection-section .collection-row .collection-column small{
+    font-size: var(--font-size-s);
 }
 .collection-section .collection-row .collection-column p{
     font-size: var(--font-size-m);
