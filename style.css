@@ -25,7 +25,7 @@ html {
     --hover-color:rgba(163, 150, 150, 1);
     --link-hover-color:rgb(209, 8, 8);
     --another-font-family: 'Courier New', Courier, monospace;
-    --green-color:rgb(34, 228, 34);
+    --green-color:rgb(24, 150, 24);
     --strike-color:rgb(194, 184, 184);
 
 
@@ -545,7 +545,7 @@ main .size-section .size-buttons .button-section2{
 
 }
 .collection-section .collection-row .collection-column p{
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
 }
 .collection-section .collection-row .collection-column p s{
     margin: 5px;
@@ -811,10 +811,10 @@ main .size-section .size-buttons .button-section a button{
 
 /*===== Collection Section ======*/
 .collection-section {
-    padding: 8px;
+    padding: 5px;
 }
 .collection-section .collection-row{
-    padding: 10px;
+    padding: 5px;
 }
 .collection-section .collection-row .collection-column{
     width: 45%;
@@ -840,7 +840,7 @@ main .size-section .size-buttons .button-section a button{
     font-size: var(--font-size-s);
 }
 .collection-section .collection-row .collection-column p span{
-    font-size: var(--font-size-n);
+    font-size: var(--font-size-s);
 
 
 }
