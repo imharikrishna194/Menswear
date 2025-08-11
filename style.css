@@ -599,14 +599,14 @@ main .size-section .size-buttons .button-section2{
     color: var(--secondary-color-hover);
     font-size: var(--font-size-m);
 }
-.footer-section .footer-row .footer-column p{
+/* .footer-section .footer-row .footer-column p{
     font-size: var(--font-size-m);
     color: var(--secondary-color-hover);
 }
 .footer-section .footer-row .footer-column p b{
     color: var(--dark-color);
     font-weight: var(--font-weight-bold);
-}
+} */
 .footer-section .footer-row .footer-column3{
     width: 40%;
 }
@@ -633,6 +633,39 @@ main .size-section .size-buttons .button-section2{
     padding: 5px;
     margin: 5px;
 }
+
+.footer-column3 .contact-info-list .contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-info-list .contact-info i{
+    color: var(--secondary-color-hover);
+    font-size:var(--font-size-m);
+    margin: 5px;
+}
+.contact-info-list .contact-info p{
+    font-size: var(--font-size-m);
+    color: var(--secondary-color-hover);
+}
+.last-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.last-div .icon-wrapper a{
+    color: var(--secondary-color-hover);
+    margin: 5px;
+}
+.last-div .icon-wrapper a:hover{
+    color: var(--secondary-color);
+}
+.last-div .icon-wrapper i{
+    font-size: var(--font-size-xxxl);
+    margin: 5px;
+}
+
 /*===== Media Quary =====*/
 
 /*----- Mobile Devices -----*/
@@ -947,7 +980,16 @@ main .size-section .size-buttons .button-section a button{
 .footer-section .footer-row .footer-column h4{
     font-size: var(--font-size-m);
 }
-  
+.last-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.last-div .icon-wrapper svg{
+    width: 28px;
+    height: 28px;
+}
 
 
 

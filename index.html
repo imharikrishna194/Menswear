@@ -20,8 +20,8 @@
     <!-- Article -->
     <article>
         <div class="top-div">
-            <a href="#" class="link-one">Clearance Up To 70% Off Original Prices </a>
-            <a href="#" class="link-two"> | <i class="fa fa-shopping-cart"></i> Shop Now ></a>
+            <a href="#shop" class="link-one">Clearance Up To 70% Off Original Prices </a>
+            <a href="#shop" class="link-two"> | <i class="fa fa-shopping-cart"></i> Shop Now ></a>
         </div>
         <div class="bottom-div">
             <div class="bottom-div-content ">
@@ -47,7 +47,7 @@
     </article>
 
     <!-- Header -->
-    <header>             
+    <header id="home">             
         <nav class="navbar">
             <div class="navbar-logo">
                 <?xml version="1.0" encoding="UTF-8"?><svg width="28px" height="28px" viewBox="0 0 24 24" stroke-width="1.5" fill="white" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M5.81249 7C5.81249 7 5.35861 7.62759 4.81552 8.66667M18.1875 7C18.1875 7 18.6414 7.62759 19.1845 8.66667M4.81552 8.66667C4.0067 10.2142 3 12.6743 3 15.3333C5.8125 15.3333 7.49999 17 7.49999 17C7.49999 17 8.62499 22 12 22C15.375 22 16.5 17 16.5 17C16.5 17 18.1875 15.3333 21 15.3333C21 12.6743 19.9933 10.2142 19.1845 8.66667M4.81552 8.66667C4.81552 8.66667 1.875 6.44436 4.81552 2C5.81249 2.55556 8.625 4.77778 8.625 4.77778C8.625 4.77778 10.3125 3.66667 12 3.66667C13.6875 3.66667 15.375 4.77778 15.375 4.77778C15.375 4.77778 18.1875 2.55556 19.3125 2C22.125 6.44456 19.1845 8.66667 19.1845 8.66667" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 18L12 18M13 18L12 18M12 18L12 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 12.5L10 14" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 12.5L14 14" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -57,33 +57,32 @@
             </div>
             <ul class="nav-links">
                 <i class="fa fa-times menu-close-button" onclick="menuCloseButton()"></i>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">Wedding store</a></li>
-                <li><a href="#">Summer Store</a></li>
-                <li><a href="#">New Arrivels</a></li>
-                <li><a href="#">upto 60% off</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#all">Collections</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#size">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
                 
             </ul>
             <div class="social-links">
-                <a href=""><i class="fa fa-search"></i></a> 
-                <a href=""><i class="fa fa-user"></i></a> 
-                <a href=""><i class="fa fa-shopping-bag"></i></a>   
+                <a href="#"><i class="fa fa-search"></i></a> 
+                <a href="#contact"><i class="fa fa-user"></i></a> 
+                <a href="#"><i class="fa fa-shopping-bag"></i></a>   
             </div>
             <div class="menu-div">
                 <i class="fa fa-bars" onclick="menuOpenButton()"></i>
             </div>
         </nav> 
         <div class="main-video">
-            <video  autoplay loop muted playes-inline     class="background-clip" width="100%">
+            <video  class="background-clip" width="100%">
                 <source src="assetsNew/mainVideo.mp4" type="video/mp4">
                 <!-- autoplay loop muted playes-inline          -->
         </div>
         <div class="main-content">
             <h3>The Sharp Cut Sale</h3>
             <div class="main-button">
-                <a href="#"><button>upto 60% off</button></a>
-                <a href="#"><button>Rs 1999store</button></a>
+                <a href="#shop"><button>upto 60% off</button></a>
+                <a href="#shop"><button>Rs 1999store</button></a>
             </div>
         </div>
           
@@ -91,7 +90,7 @@
 
     <main>
         <!-- Size Section -->
-        <section class="size-section">
+        <section class="size-section" id="size">
             <h3>shop by size </h3>
             <div class="size-div">
                 <div class="tittle" onclick="viewButtonSection1()"><h3>Top Wear</h3></div>
@@ -120,7 +119,7 @@
         </section>
 
         <!-- Global Section -->
-        <section class="globel-section">
+        <section class="globel-section" id="globel">
             <h3 class="section-tittle">NO COST | 3 EASY EMI's - Activate at Checkout</h3>
             <div class="globel-row">
                 <div class="globel-column">
@@ -136,11 +135,11 @@
         </section>
 
         <!-- AllCategories -->
-        <section class="allcategories-section">
+        <section class="allcategories-section" id="all">
             <h3 class="section-tittle">Most Wanted Categories</h3>
             <div class="all-row">
                 <div class="all-column">
-                    <img src="assetsNew/shirt.jpg" alt="All-Categories">
+                    <img src="assetsNew/shirt.jpg" alt="All-Categories" >
                 </div>
                 <div class="all-column">
                     <img src="assetsNew/Trousers.jpg" alt="All-Categories">
@@ -195,7 +194,7 @@
 
 
         <!-- Collection Section -->
-         <section class="collection-section" id="collection">
+        <section class="collection-section" id="shop">
             <div class="collection-row">
                 <div class="collection-column">
                     <img src="assetsNew/s111.jpg" alt="CollectionImg">
@@ -294,13 +293,13 @@
                     <p>&#8377;349</p>
                 </div>
             </div>
-         </section>
+        </section>
 
         
     </main>
 
     <!-- Footer Section -->
-    <section class="footer-section">
+    <section class="footer-section" id="contact">
         <div class="footer-row">
             <div class="footer-column">
                 <h4>Quick Links</h4>
@@ -323,15 +322,48 @@
                 </ul>
             </div>
             <div class="footer-column footer-column3">
-                <h4>Address</h4>
-                <p><b>Corporate Office -</b> Mohan Clothing Co. Pvt. Ltd. Plot No. 58-59, Udyog Vihar, Phase – 4, Gurugram -122015, India</p>
-                <p><b>Registered Office -</b> 2E/22, Jhandewalan Extension, Near Central Bank, New Delhi -110055</p>
-                <p><a href="#">Customersupport@blackberrys.com</a></p>
-                <p>08071811173 / 9810000209 (10:00AM-6:00PM) - (Mon-Fri)</p>                
-            </div>
+                <h4>Contact Us</h4>
+                <!-- <p><b>ADDRESS :</b><br> 123, 5th, Bangalamedu, Theni, TamilNadu, India.</p>
+                <p><b>PHONE :</b><br> (123) 456-7890</p>
+                <p><b>EMAIL :</b><br><a href="#">Customersupport@blackberrys.com</a></p>
+                <p>(10:00AM-6:00PM) - (Mon-Fri)</p>                 -->
 
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Forest Road, 5th, street, Theni-625531 ,Tamil-nadu, India</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info: GtMensWearHouse@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+91) 95664 ****</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday: 9:00 AM - 9:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday : 10:00 AM - 10:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sunday: Regular</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.GtMensWearHouse.com</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="social-links">
+        
+
+        <div class="last-div">
+            <div class="social-links">
             <a href="#">
                 <i class="fa fa-facebook" href="#"></i>
             </a> 
@@ -347,36 +379,19 @@
             <a href="#">
                 <i class="fa fa-linkedin" href="#"></i>
             </a>
-            <p>© 2025 - GtMensWearHouse</p>            
-
+            <p>© 2025 - GtMensWearHouse</p>  
+                     
+            </div>
+            <div class="icon-wrapper">
+                <a href="#home"><i class="fas fa-chevron-circle-up bottom-icon"></i></a>        
+            </div>
         </div>
 
     </section>
     
-    
-
-    
-    
-    
-    
-
-    
-
-
-
-
-
-
-
-
-    
-
-
 
 
     <!-- ================================================ -->
-
-
     
 
      <div class="find-store">
