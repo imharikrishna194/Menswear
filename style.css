@@ -245,9 +245,9 @@ header .navbar{
     list-style: none;
     text-transform: uppercase;
     gap: 30px;
-    overflow: scroll;
+
 }
-.navlinks-div{
+/* .navlinks-div{
     display: none;
 }
 .navlinks-div a img{
@@ -256,7 +256,7 @@ header .navbar{
 }
 .navlinks-div img:hover{
     cursor: pointer;
-}
+} */
 .navbar .nav-links li a{
     text-decoration: none;
     color: var(--white-color);
@@ -788,15 +788,15 @@ header .navbar{
     gap: 0px;
     padding: 20px;
     width: 85%;
-    height: 100vh;
-    background:var(--secondary-color);
-    transition: 0.5s;
+    height: 50vh;
+    transition: 0.6s;
     z-index: 99;
+    background: var(--secondary-color);
 }
-.navlinks-div{
+/* .navlinks-div{
     width: 100%;
     display: block;
-}
+} */
 .navbar .nav-links .menu-close-button{
     display: block;
     font-size: var(--font-size-xxxl);
