@@ -642,7 +642,7 @@ main .size-section .size-buttons .button-section2{
 .contact-info-list .contact-info i{
     color: var(--secondary-color-hover);
     font-size:var(--font-size-m);
-    margin: 5px;
+    margin-right: 10px;
 }
 .contact-info-list .contact-info p{
     font-size: var(--font-size-m);
@@ -979,6 +979,10 @@ main .size-section .size-buttons .button-section a button{
 }
 .footer-section .footer-row .footer-column h4{
     font-size: var(--font-size-m);
+}
+
+.footer-column3 .contact-info-list .contact-info{
+    padding: 5px;
 }
 .last-div {
     display: flex;
