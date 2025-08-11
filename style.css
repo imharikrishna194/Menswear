@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     user-select: none;
 }
@@ -287,6 +287,9 @@ header .navbar{
     text-decoration: overline;    
 }
 .navbar .nav-links .menu-close-button{
+    display: none;
+}
+.sign-in{
     display: none;
 }
 .navbar-logo svg:hover{
@@ -793,10 +796,7 @@ header .navbar{
     z-index: 99;
     background: var(--secondary-color);
 }
-.navbar .nav-links li img{
-    width: 100%;
-    height: 50%;
-}
+
 /* .navlinks-div{
     width: 100%;
     display: block;
@@ -805,6 +805,11 @@ header .navbar{
     background: var(--white-color);
     width: 100%;
     padding: 10px;
+    display: block;
+}
+.sign-in img{
+    width: 100%;
+    height: 90%;
 }
 .sign-in a{
     text-decoration: none;
