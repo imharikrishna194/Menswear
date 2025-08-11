@@ -781,22 +781,36 @@ header .navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
     position: absolute;
     top: 0;
     left: -100%;
     gap: 0px;
     padding: 20px;
     width: 85%;
-    height: 50vh;
+    height: 100vh;
     transition: 0.6s;
     z-index: 99;
     background: var(--secondary-color);
+}
+.navbar .nav-links li img{
+    width: 100%;
+    height: 100%;
 }
 /* .navlinks-div{
     width: 100%;
     display: block;
 } */
+ .sign-in{
+    background: var(--white-color);
+    width: 100%;
+    padding: 10px;
+}
+.sign-in a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--font-size-n);
+}
 .navbar .nav-links .menu-close-button{
     display: block;
     font-size: var(--font-size-xxxl);
