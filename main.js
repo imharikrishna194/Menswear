@@ -1,11 +1,10 @@
 // Find Store Visibility
 const divBox = document.querySelector(".find-store")
 function clk() {
-    divBox.style.display="block"
-    divBox.style.transform= translateY("-100px");
+    divBox.style.top="1%"
 };
 function clkRemove(){
-    divBox.style.display="none"
+    divBox.style.top="-100%";
 };
 
 // Toggle mobile menu 

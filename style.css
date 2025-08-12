@@ -143,17 +143,17 @@ html {
 }
 
 
+/*====== Find Store ======*/
     .find-store {
-        width: 50%;
         height: fit-content;
         padding: 10px;
         position: absolute;
         left:1%;
-        top:1%;
-        box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
-        border:2px solid rgba(255,255,255,0.18);
-        display: none;
-        backdrop-filter:blur(30px);
+        top:-100%;
+        transition: 0.5s ease;
+        display: block;
+        border:none;
+        background: var(--secondary-color);
         z-index: 49;
         width: 30%;
         text-align: center;
@@ -163,6 +163,7 @@ html {
         position: relative;
         left:40%;
         font-size: var(--font-size-xxl);
+        color: var(--white-color);
     }
     .find-store i:hover{
         color: var(--link-hover-color);
@@ -171,6 +172,7 @@ html {
     }
     .find-store h5 {
         font-size: var(--font-size-n);
+        color: var(--white-color);
         font-weight: var(--font-weight-normal);
     }
     .find-store h3 {
@@ -183,6 +185,7 @@ html {
         font-size: var(--font-size-n);
         font-weight: var(--font-weight-low);
         line-height: normal;
+        color: var(--white-color);
     }
     .find-store button {
         padding: 5px;
@@ -191,14 +194,17 @@ html {
         margin-bottom: 5px;
         width: 100%;
         border-radius: 5px;
-        color: var(--primary-color);
-        background: var(--secondary-color) ;
-        border:none;
+        color:var(--primary-color);
+        border: none;
+        background:var(--secondary-color-hover);
+
     }
     .find-store button:hover{
-        background:var(--button-hover-color) ;
+        background:var(--secondary-color);
         cursor: pointer;
         transition: 0.3s;
+        border:0.1px solid var(--primary-color);
+
     } 
 
 
@@ -245,18 +251,8 @@ header .navbar{
     list-style: none;
     text-transform: uppercase;
     gap: 30px;
+}
 
-}
-/* .navlinks-div{
-    display: none;
-}
-.navlinks-div a img{
-    width: 100%;
-    height: 40%;
-}
-.navlinks-div img:hover{
-    cursor: pointer;
-} */
 .navbar .nav-links li a{
     text-decoration: none;
     color: var(--white-color);
@@ -732,42 +728,44 @@ main .size-section .size-buttons .button-section2{
     .bottom-div-end-content {
         display: none;
     }
+   
+ /*====== Find Store ======*/
     .find-store {
         width: 100%;
-        padding: 10px;
+        height: fit-content;
+        padding:px;
         position: absolute;
-        left: 0;
-        top:0;
-        bottom: 0;
-        right: 0;
+        left:0%;
+        top:-100%;
+        transition: 0.5s ease;
+        display: block;
+        border:none;
+        background: var(--secondary-color);
+        z-index: 49;
         text-align: center;
-        transition: 0.8s;
+        padding-bottom:20px;
     }
     .find-store i{
-        /* position: relative;
-        left: 40%; */
+        position: relative;
+        left:40%;
         font-size: var(--font-size-xxl);
+        font-weight: var(--font-weight-low);
     }
     .find-store h5 {
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-low);
+        font-size: var(--font-size-s);
     }
     .find-store h3 {
-        font-size: var(--font-size-n);
-       
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-normal);
     }
     .find-store p {
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-low);
-        line-height: normal;
+        font-size: var(--font-size-s);
     }
     .find-store button {
         padding: 5px;
-        font-size:var(--font-size-s);
-        font-weight: var(--font-weight-low);
-        margin-bottom: 5px;
-    }
-
+        width: fit-content;
+    }   
+  
 /* Header Navbar */
 header .navbar{
     padding: 10px;
@@ -1053,547 +1051,3 @@ main .size-section .size-buttons .button-section a button{
 
 /* ===================================== */
 
-/*===== header =====*/
-/* header .top-div {
-    padding: 10px;
-    background: var(--secondary-color) ;
-    text-align:center;
-}
-header .top-div a {
-    color:var(--another-color);
-    text-decoration:none;
-    font-size:var(--font-size-n);
-    font-weight:var(--font-weight-normal);
-    text-transform:uppercase;
-}
-header .top-div a i{
-    color: var(--another-color);
-}
-header .top-div a:hover {
-    color:var(--link-hover-color);
-    text-decoration:underline;
-    transition:0.5s;
-}
-header .top-div a i:hover{
-    color:var(--link-hover-color);
-}
-
-header .bottom-div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    border-bottom: 1px solid rgb(158, 155, 155);
-    background:var(--another-color);
-}
-.bottom-div-links{
-    display: none;
-}
-.bottom-div-content ul{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-.bottom-div-content ul li{
-    list-style: none;
-    font-size: var(--font-size-m);
-    color: var(--dark-color);
-}
-.bottom-div-content ul li:hover{
-    cursor: pointer;
-    color: var(--link-hover-color);
-}
-.bottom-div-content ul li i{
-    color: var(--dark-color);
-    font-size: var(--font-size-m);
-}
-.bottom-div-content ul li i:hover{
-    color: var(--link-hover-color);
-    transition: 0.3s;
-    cursor: pointer;
-}
-.bottom-div-content a{
-    text-decoration: none;
-    color: var(--dark-color);
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-normal);
-}
-.bottom-div-content a:hover{
-    text-decoration: underline;
-    color: var(--link-hover-color);
-    transition: 0.3s;
-}
-.find-store {
-    background:var(--white-color) ;
-    color: var(--secondary-color);
-    width: 18%;
-    padding: 15px;
-    position: absolute;
-    left: 7%;
-    top:7%;
-    box-shadow: 0 0 2px 2px rgb(189, 181, 181);
-    display: none;
-    z-index: 3;
-    text-align: center;
-    border-radius: var(--border-radius-s);
-    
-}
-.find-store i{
-    position: relative;
-    left: 40%;
-    color: var(--secondary-color);
-}
-.find-store i:hover{
-    cursor: pointer;
-    color: var(--link-hover-color);
-    text-decoration: overline;
-    transition: 0.3s;
-}
-.find-store h5 {
-    font-size: var(--font-size-n);
-} 
-.find-store h3 {
-    font-size: var(--font-size-m);
-    color: var(--link-hover-color);
-}
-.find-store p {
-    font-size: var(--font-size-n);
-}
-.find-store button {
-    padding: 5px;
-    width: 100%;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    border:1px solid black;
-    border-radius: var(--border-radius-s);
-
-    align-self: center;
-    font-size: var(--font-size-s);
-    margin-top: 5px;
-}
-.find-store button:hover {
-    background: var(--secondary-color-hover);
-    cursor: pointer;
-    transition: 0.3s;
-    border: 1px solid var(--primary-color);
-
-
-}
-
-header{
-    position: relative;
-    display: inline;
-}
-header .header-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background: transparent ;
-    padding: 20px;
-    z-index: 2;
-    width: 100%;
-    position: sticky;
-    top:10px;
-    
-}
-.header-row .header-column {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-transform: uppercase;
-}
-header .header-row .header-column2 i{
-    margin: 5px;
-    
-}
-header .header-row .header-column {
-    gap: 3px;
-}
-header .header-row .header-column .nav-links{
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    text-transform: uppercase; 
-    position: sticky;
-    top:20px;
-}
-.header-row .header-column .content-text:hover{
-    cursor: pointer;
-    color: red;
-    transition: 0.3s;
-    text-decoration: underline;
-}
-.header-row .header-column h3,i{
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-bold);
-    color:var(--secondary-color);
-}
-header .header-row .menu-list {
-    display: none;
-}
-.header-row .header-column i{
-    font-size: var(--font-size-m);
-}
-.header-row .header-column .nav-links a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-size: var(--font-size-n);
-    font-weight: var(--font-weight-normal);
-}
-.header-row .header-column .nav-links a:hover{
-    cursor: pointer;
-    color: var(--link-hover-color);
-    transition: 0.3s;
-    text-decoration: underline;
-}
-.header-row .header-column3{
-    display: none;
-}
-
-section{
-
-}
-section .home-section{
-    
-}
-
-.home-section video::before{
-       width: 100%;
-       height: 100%;
-       object-fit: cover;
-       background-attachment: fixed;
-    
-    }
-    
-.home-section video::after{
-    position: absolute;
-       width: 100%;
-       height: 100%;
-    
-    } */
-
-/*===== Fixed Button (FeedBack Button) */
-/* article .fixed-button{
-    color: var(--primary-color);
-    background:var(--secondary-color);
-    padding: 8px;
-    border:1px solid var(--dark-color);
-    border-radius: var(--border-radius-s);
-    position: fixed;
-    top: 92%;
-    left: 93%;    
-}
-article .fixed-button i{
-    color: var(--primary-color);
-}
-article .fixed-button:hover{
-    background: var(--secondary-color-hover);
-    cursor: pointer;
-    transition: 0.3s;
-    border: 1px solid var(--primary-color);
-
-} */
-
-/*===== Media Quary =====*/
-/*----- Mobile Devices -----*/
-/* @media screen  and (max-width:767px){
-
-    
-    header .top-div {
-        padding: 5px;
-    }
-    header .top-div a{
-        font-size:var(--font-size-s);
-        font-weight:var(--font-weight-low);
-    }
-    header .top-div .link-two{
-        display: none;
-    }
-
-    header .bottom-div {
-        padding: 5px;
-    }
-    .bottom-div-links{
-        display: block;
-    }
-    .bottom-div-links i{
-        margin: 3px;
-    }
-    .bottom-div-links i:hover{
-        color: var(--link-hover-color);
-        cursor: pointer;
-    }
-    .bottom-div-content ul{
-        gap: 7px;
-    }
-    .bottom-div-content ul li{
-        font-size: var(--font-size-s);
-    }
-    .bottom-div-content ul li i{
-        font-size: var(--font-size-s);
-    }
-    .bottom-div-content a{
-        font-size: var(--font-size-s);
-        font-weight: var(--font-weight-bold);
-    }
-    .bottom-div-content a i{
-        font-size: var(--font-size-s);
-    }
-    .bottom-div-content i:hover{
-        cursor: pointer;
-        color: var(--link-hover-color);
-    }
-    .bottom-div-end-content {
-        display: none;
-    }
-    
-    .find-store {
-        width: 50%;
-        padding: 10px;
-        position: absolute;
-        left: 1%;
-        top:1%;
-        box-shadow: 0 0 1px 1px rgb(189, 181, 181);
-    }
-    .find-store i{
-        position: relative;
-        left: 40%;
-        font-size: var(--font-size-m);
-    }
-    .find-store h5 {
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-low);
-    }
-    .find-store h3 {
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-normal);
-    }
-    .find-store p {
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-low);
-        line-height: normal;
-    }
-    .find-store button {
-        padding: 5px;
-        font-size:var(--font-size-s);
-        font-weight: var(--font-weight-low);
-        margin-bottom: 5px;
-    }
-
-    .header-row .header-column .content-text{
-        font-size:var(--font-size-n);
-        font-weight: bold;
-    }
-    header .header-row .header-column2{
-        display: none;
-    }
-    header .header-row .header-column .nav-links{
-        display: none;
-    }
-    header .header-row .menu-list{
-        background-color: var(--secondary-color);
-        position: absolute;
-        top: 5%;
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: center;
-        padding: 20px;
-        height: 95vh;
-        width: 80%;
-        left: -100%;
-        transition: 0.5s;
-    } 
-    header .header-row .menu-list i{
-        position: absolute;
-        left:7%;
-        font-size: var(--font-size-xxl);
-        color: var(--primary-color);
-    }
-    header .header-row .menu-list i:hover{
-        color: var(--hover-color);
-        cursor: pointer;
-        text-decoration: overline;
-        transition: 0.3s;
-    }
-    header .header-row .menu-list .nav-links{
-        list-style: none;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: space-evenly;
-        flex-direction: column;
-        
-    }
-    .header-row .menu-list .nav-links a {
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-low);
-        text-decoration: none;
-        color: var(--primary-color);
-        text-transform: uppercase;
-    }
-    .header-row .menu-list .nav-links a:hover{
-        text-decoration: overline;
-        color: var(--link-hover-color);
-        transition: 0.3s;
-        cursor: pointer;
-
-    } 
-    .header-row .header-column h3,i{
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-normal);
-    }
-    .header-row .header-column i{
-        font-size: var(--font-size-n);
-    }
-    .header-row .header-column .nav-links a {
-        font-size: var(--font-size-s);
-        font-weight: var(--font-weight-low);
-    }
-    .header-row .header-column .nav-links{
-        display: none;
-    }
-    .header-row .header-column3{
-        display: block;
-    }
-    .header-row .header-column3 i{
-        font-size: var(--font-size-xxl);
-    }
-    .header-row .header-column3 i:hover{
-        text-decoration: overline;
-        color: var(--link-hover-color);
-        transition: 0.3s;
-        cursor: pointer;
-    }
-        
-
-    article .fixed-button{
-        padding: 5px;
-        position: fixed;
-        top: 95%;
-        left: 90%;  
-    }
-    
-
-
-
-    .home-section video::before{
-       width: 100%;
-       height: 100%;
-       object-fit: cover;
-       background-attachment: fixed;
-    
-    }
-    
-.home-section video::after{
-    position: absolute;
-       width: 100%;
-       height: 100%;
-    
-    }
-   
-    
-    
-} */
-/*----- Tablet Devices -----*/
-/* @media screen  and (min-width:767px) and (max-width:1023px){
-
-    .header-row .header-column .content-text{
-        font-size:var(--font-size-n);
-        font-weight: bold;
-    }
-    header .top-div {
-        padding: 7px;
-    }
-    header .top-div a{
-        font-size:var(--font-size-s);
-        font-weight:var(--font-weight-low);
-    }
-    header .bottom-div {
-        padding: 7px;
-    }
-    .bottom-div-links{
-        display: block;
-    }
-    .bottom-div-links i{
-        margin: 3px;
-    }
-    .bottom-div-links i:hover{
-        color: var(--link-hover-color);
-        cursor: pointer;
-    }
-    .bottom-div-content ul{
-        gap: 10px;
-    }
-    .bottom-div-content a{
-        font-size: var(--font-size-m);
-        font-weight: var(--font-weight-bold);
-    }
-    .bottom-div-end-content {
-        display: none;
-    }
-    .find-store {
-        width: 30%;
-        padding: 10px;
-        position: relative;
-        left: 1%;
-        top:1%
-    }
-    .find-store h5 {
-        font-size: var(--font-size-s);
-    }
-    .find-store h3 {
-        font-size: var(--font-size-n);
-    }
-    .find-store p {
-        font-size: var(--font-size-s);
-        line-height: normal;
-    }
-    .find-store button {
-        padding: 3px;
-    }
-    .find-store button {
-        padding: 5px;
-        font-size: var(--font-size-s);
-    }
-    header .header-row .header-column2 {
-        gap: 5px;
-        display: none;
-    }
-    header .header-row .header-column .nav-links{
-        display: none;
-    }
-    .header-row .header-column h3,i{
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-normal);
-    }
-    .header-row .header-column i{
-        font-size: var(--font-size-m);
-    }
-    .header-row .header-column .nav-links a {
-        font-size: var(--font-size-n);
-        font-weight: var(--font-weight-normal);
-    }
-    .header-row .header-column .nav-links{
-        display: none;
-    }
-    .header-row .header-column3{
-        display: block;
-    }
-
-    article .fixed-button{
-        padding: 8px;
-        position: fixed;
-        top: 90%;
-        left: 95%;   
-    }
-    
-} */
-/*----- Laptop Devices -----*/
-/* @media screen and (min-width:1024px) and (max-width:1439px){
-    
-} */
-/* Desktop Devices */
-/* @media screen and (min-width:1440px){
-    
-} */
