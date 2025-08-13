@@ -5,6 +5,7 @@
 /*===== Product1 Section Img Fit */
 .product1-section{
     padding: 5px;
+
 }
 .product1-section .row{
     width: 100%;
@@ -25,11 +26,13 @@
     align-items: center;
     justify-content: center;
 
+
 }
 .product1-section .row .column .column-row .main-img-div{
     width: 60%;
     height: 530px;
     padding: 3px;
+
 }
 .product1-section .row .column .column-row .main-img-div img{
     width: 100%;
@@ -45,10 +48,12 @@
     justify-content: space-between;
     margin-top: 9px;
     padding-top:0px ;
+
 }
 .product1-section .row .column .column-row .small-img-group .small-img-div{
     display: flex;
     align-items: center;
+
 }
 .product1-section .row .column .column-row .small-img-group .small-img-div img{
     width: 100%;
@@ -115,25 +120,31 @@ img:hover{
 /*===== Product1 Section ===== 
 /*===== Product1 Section Img Fit */
 .product1-section .row{
-    padding: 12px;
+    padding: 0px;
     flex-wrap: wrap;
 }
 .product1-section .row .column .column-row .main-img-div{
-    padding: 3px;
+    padding: 0px;
     height: 100%;
+    margin: 0px;
 }
+.product1-section .row .column .column-row {
+    padding: 0px;
+}
+
 .product1-section .row .column .column-row .main-img-div img{
     width: 100%;
     height: 100%;
+    margin: 0px;
 }
 .product1-section .row .column .column-row  .small-img-group{
     margin-top: -4px;
+    padding: 3px;
+
 }
-.product1-section .row .column .column-row  .small-img-group{
-    padding: 4px;
-}
+
 .product1-section .row .column .column-row .small-img-group .small-img-div img{
-    margin: 2px;
+    margin: 1px;
 }
 /*===== Product1 Section Content */
 .product1-section .row .column span{
