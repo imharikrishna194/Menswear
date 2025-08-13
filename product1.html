@@ -17,6 +17,49 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+
+    <!-- Header -->
+    <header id="home">             
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <?xml version="1.0" encoding="UTF-8"?><svg width="28px" height="28px" viewBox="0 0 24 24" stroke-width="1.5" fill="white" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M5.81249 7C5.81249 7 5.35861 7.62759 4.81552 8.66667M18.1875 7C18.1875 7 18.6414 7.62759 19.1845 8.66667M4.81552 8.66667C4.0067 10.2142 3 12.6743 3 15.3333C5.8125 15.3333 7.49999 17 7.49999 17C7.49999 17 8.62499 22 12 22C15.375 22 16.5 17 16.5 17C16.5 17 18.1875 15.3333 21 15.3333C21 12.6743 19.9933 10.2142 19.1845 8.66667M4.81552 8.66667C4.81552 8.66667 1.875 6.44436 4.81552 2C5.81249 2.55556 8.625 4.77778 8.625 4.77778C8.625 4.77778 10.3125 3.66667 12 3.66667C13.6875 3.66667 15.375 4.77778 15.375 4.77778C15.375 4.77778 18.1875 2.55556 19.3125 2C22.125 6.44456 19.1845 8.66667 19.1845 8.66667" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 18L12 18M13 18L12 18M12 18L12 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 12.5L10 14" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 12.5L14 14" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <a href="index.html" class="logo">
+                    gt-menswear'house
+                </a>
+            </div>
+            <ul class="nav-links">
+                <i class="fa fa-times menu-close-button" onclick="menuCloseButton()"></i>
+                <li><a href="index.html" onclick="menuClose()">Home</a></li>
+                <li><a href="index.html" onclick="menuClose()">Collections</a></li>
+                <li><a href="#" onclick="menuClose()">Shop</a></li>
+                <li><a href="#size" onclick="menuClose()">Blog</a></li>
+                <li><a href="#contact" onclick="menuClose()">Contact Us</a></li>
+                <div class="sign-in" >   
+                    <a href="#shop"><img src="assetsNew/upto_60_OFF.jpg" alt=""></a>
+                    <i class="fa fa-user"></i> 
+                    <a href="#">Sign In</a>                         
+            </div>  
+                <!-- <div class="navlinks-div">
+                    <a href="#shop" onclick="menuClose()"><img src="assetsNew/Printed-T-shirt-Desktop-view-30.jpg" alt="MenuImg" href="#shop"></a>
+                    <a href="#shop" onclick="menuClose()"><img src="assetsNew/Combo-banner2-desktop-view.jpg" alt="MenuImg" href="#shop"></a>
+                    <a href="#shop" onclick="menuClose()"><img src="assetsNew/new-shirt-banner-desktop-view.jpg" alt="MenuImg" href="#shop"></a>
+                    
+                </div> -->
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fa fa-search"></i></a> 
+                <a href="#contact"><i class="fa fa-user"></i></a> 
+                <a href="#"><i class="fa fa-shopping-bag"></i></a>   
+            </div>
+            <div class="menu-div">
+                <i class="fa fa-bars" onclick="menuOpenButton()"></i>
+            </div>
+        </nav> 
+        
+          
+    </header>
+
+    
     <!--====== Product1 Section =======-->
         <section class="product1-section" id="product">
             <div class="row">
@@ -42,8 +85,8 @@
                     </div>
                     
                 </div>
-                <div class="column">
-                    <span>Home/Shirt</span>
+                <div class="column ">
+                    <span>Home/Shop/Shirt</span>
                     <h2 class="tittle">Men's Fashion Shirt</h2>
                     <h1 class="rate">$139.00</h1>
                     <select>
@@ -55,13 +98,211 @@
                         <option>XLL</option>
                     </select>
                     <input type="number" value="1">
-                    <button class="cart-button">ADD TO CART</button>
+                    <a href="#"><button class="cart-button">ADD TO CART</button></a>
 
                     <h3 class="details">Product Details</h3>
+                    <table>
+                        <tr>
+                            <td>Material Composition : </td>
+                            <td> 100% Cotton</td>
+                        </tr>
+                        <tr>
+                            <td>Pattern : </td>
+                            <td>Smart</td>
+                        </tr>
+                        <tr>
+                            <td>Fit Type : </td>
+                            <td>Regular Fit</td>
+                        </tr>
+                        <tr>
+                            <td>Sleeve type : </td>
+                            <td>Full Sleeve</td>
+                        </tr>
+                        <tr>
+                            <td>Length : </td>
+                            <td>tandard Length</td>
+                        </tr>
+                        <tr>
+                            <td>Country Of Origin : </td>
+                            <td>India</td>
+                        </tr>
+                    </table>
                     <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laudantium dolores ducimus, ad sunt doloribus fugit ratione earum non fuga?</p>
+                    <div class="icons-group">
+                        <div class="icons">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <small> 10 Days Return And Exchange</small>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-money-bill-wave"></i>     
+                            <small> Cash Pay On Delivery</small>                       
+                        </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-truck"></i>
+                            <small> Free Delivery</small>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-medal"></i>
+                            <small> Top Brands</small>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-lock"></i> 
+                            <small> Secure Transaction</small>                           
+                        </div>                       
+
+                    </div>
                 </div>
             </div>
         </section>
+
+    <!--====== Featured Products ======-->
+        <section class="collection-section" id="shop">
+            <h3 class="section-tittle">Featured Products</h3>
+            <div class="collection-row">
+                <div class="collection-column">
+                    <a href="product1.html"><img src="assetsNew/s1111.jpg" alt="CollectionImg" ></a>
+                    <h3 class="tittle">Black Waffle Corduroy Shaket</h3>
+                    <small>Shirts Reimagined</small>
+                    <p>&#8377;998<s>2499</s><span>(64% Off)</span></p>
+                </div>
+                <div class="collection-column">
+                    <img src="assetsNew/s33.jpg" alt="CollectionImg">
+                    <h3 class="tittle">Light Gray Flower Print Shirt</h3>
+                    <small>ClubWear Shirt </small>
+                    <p>&#8377;1399<s>2899</s><span>(52% Off)</span></p>
+                </div>                
+                <div class="collection-column">
+                    <img src="assetsNew/s3.jpg" alt="CollectionImg">
+                    <h3 class="tittle">Light Gray Strike Shirt</h3>
+                    <small>Casual Shirt</small>
+                    <p>&#8377;899<s>2499</s><span>(64% Off)</span></p>
+                </div>
+                <div class="collection-column">
+                    <img src="assetsNew/s444.jpg" alt="CollectionImg">
+                    <h3 class="tittle">Pink Frayed Checked Shirt</h3>
+                    <small>Deniam Crack Shirt</small>
+                    <p>&#8377;998<s>1998</s><span>(50% Off)</span></p>
+                </div>
+                <div class="collection-column">
+                    <img src="assetsNew/ts2.jpg" alt="CollectionImg">
+                    <h3 class="tittle">Gray Patch Oversized T-shirt</h3>
+                    <small>Oversized T-shirt</small>
+                    <p>&#8377;898<s>1299</s><span>(30% Off)</span></p>
+                </div>
+                <div class="collection-column">
+                    <img src="assetsNew/b3.jpg" alt="CollectionImg">
+                    <h3 class="tittle">Plain Rust Orange Mens Boxer</h3>
+                    <small>Boxers</small>
+                    <p>&#8377;349</p>
+                </div>
+                <div class="collection-column">
+                    <img src="assetsNew/b1.jpg" alt="CollectionImg">
+                    <h3 class="tittle">Plain Graizzle Grey Mens Boxer</h3>
+                    <small>Boxers</small>
+                    <p>&#8377;349</p>
+                </div>
+                <div class="collection-column">
+                    <img src="assetsNew/p44.jpg" alt="CollectionImg">
+                    <h3 class="tittle">Sage Green Cotton Cargo Joggers</h3>
+                    <small>100% Cotton </small>
+                    <p>&#8377;799<s>1099</s><span>(30% Off)</span></p>
+                </div>
+
+                
+            </div>
+            <a href="index.html"><button class="more-button">More...</button></a>
+        </section>
+
+    <!--===== Footer Section =======-->
+    <section class="footer-section" id="contact">
+        <div class="footer-row">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Return & Exchange </a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Our Policy +</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">GtMensWearHouse</a></li>
+                    <li><a href="#">About Us +</a></li>
+                    <li><a href="#">Grievance</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">SiteMap</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column3">
+                <h4>Contact Us</h4>
+                <!-- <p><b>ADDRESS :</b><br> 123, 5th, Bangalamedu, Theni, TamilNadu, India.</p>
+                <p><b>PHONE :</b><br> (123) 456-7890</p>
+                <p><b>EMAIL :</b><br><a href="#">Customersupport@blackberrys.com</a></p>
+                <p>(10:00AM-6:00PM) - (Mon-Fri)</p>                 -->
+
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Forest Road, 5th, street, Theni-625531 ,Tamil-nadu, India</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info: GtMensWearHouse@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+91) 95664 ****</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday: 9:00 AM - 9:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday : 10:00 AM - 10:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sunday: Regular</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.GtMensWearHouse.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="last-div">
+            <div class="social-links">
+            <a href="#">
+                <i class="fa fa-facebook" href="#"></i>
+            </a> 
+            <a href="#">
+                <i class="fa fa-twitter" href="#"></i>
+            </a> 
+            <a href="#">
+                <i class="fa fa-instagram" href="#"></i>
+            </a> 
+            <a href="#">
+                <i class="fa fa-youtube-play" href="#"></i>
+            </a> 
+            <a href="#">
+                <i class="fa fa-linkedin" href="#"></i>
+            </a>
+            <p>© 2025 - GtMensWearHouse</p>  
+                     
+            </div>
+            <div class="icon-wrapper">
+                <a href="#home"><i class="fas fa-chevron-circle-up bottom-icon"></i></a>        
+            </div>
+        </div>
+
+    </section>
 
 
    <script src="main.js"></script>
