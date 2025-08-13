@@ -114,8 +114,9 @@ html {
 }
 .bottom-div-content ul li{
     list-style: none;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-n);
     color: var(--dark-color);
+    text-transform:uppercase;
 }
 .bottom-div-content ul li:hover{
     cursor: pointer;
@@ -135,6 +136,7 @@ html {
     color: var(--dark-color);
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-normal);
+    text-transform:uppercase;    
 }
 .bottom-div-content a:hover{
     text-decoration: underline;
@@ -676,6 +678,7 @@ main .size-section .size-buttons .button-section2{
     margin: 5px;
 }
 
+
 /*===== Media Quary =====*/
 
 /*----- Mobile Devices -----*/
@@ -709,13 +712,13 @@ main .size-section .size-buttons .button-section2{
         gap: 7px;
     }
     .bottom-div-content ul li{
-        font-size: var(--font-size-n);
+        font-size: var(--font-size-s);
     }
     .bottom-div-content ul li i{
         font-size: var(--font-size-m);
     }
     .bottom-div-content a{
-        font-size: var(--font-size-n);
+        font-size: var(--font-size-s);
         font-weight: var(--font-weight-bold);
     }
     .bottom-div-content a i{
