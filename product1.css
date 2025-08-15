@@ -193,6 +193,7 @@ img:hover{
     border-radius:3px;
     font-size: var(--font-size-n);
     padding: 5px;
+    margin-bottom: 15px;
 
 }
 .collection-section .more-button:hover{
@@ -219,6 +220,9 @@ header .navbar{
     padding: 5px;
     justify-content: space-between;
     flex-direction: row-reverse;
+}
+header .navbar .menu-div i{
+    padding-left: 20px;
 }
 .navbar .navbar-logo{
     display: flex;
@@ -271,9 +275,9 @@ header .navbar{
     font-size: var(--font-size-xxxl);
     color: var(--primary-color);
     position: absolute;
-    top: 2%;
-    left: 5%;
-    margin: 5px;
+    top: 1%;
+    left: 6%;
+    margin: 6px;
 
 }
 .navbar .nav-links .menu-close-button:hover{
