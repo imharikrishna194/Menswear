@@ -561,9 +561,9 @@ main .size-section .size-buttons .button-section2{
     border-radius: var(--border-radius-s);
     transition: transform 0.6s;
 }
-.collection-section .collection-row .collection-column img:hover{
+/* .collection-section .collection-row .collection-column img:hover{
     transform: translateY(-10px);
-}
+} */
 .collection-section .collection-row .collection-column .tittle{
     font-size: var(--font-size-l);
     white-space: nowrap;
@@ -956,7 +956,6 @@ main .size-section .size-buttons .button-section a button{
 }
 .collection-section .collection-row .collection-column{
     width: 45%;
-
     padding: 5px;
     margin: 5px;
 }

@@ -173,8 +173,7 @@ img:hover{
     text-align: center;
     position: relative;
     left: 95%;
-    background:var(--secondary-color) ;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     border:none;
     border-radius:3px;
     font-size: var(--font-size-n);
@@ -183,7 +182,7 @@ img:hover{
 }
 .collection-section .more-button:hover{
     cursor: pointer;
-    background:var(--secondary-color-hover) ;
+    background:var(--another-color) ;
     transition: 0.3s;
 
 }
