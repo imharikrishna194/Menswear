@@ -186,6 +186,10 @@ img:hover{
     transition: 0.3s;
 
 }
+.collection-section .section-tittle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 
 
@@ -293,12 +297,12 @@ header .navbar{
 }
 .product1-section .row .column .column-row  .small-img-group{
     margin-top: -4px;
-    padding: 3px;
+    padding: 2px;
 
 }
 
 .product1-section .row .column .column-row .small-img-group .small-img-div img{
-    margin: 1px;
+    margin: 0px;
 }
 /*===== Product1 Section Content */
 .product1-section .row .column span{
@@ -357,6 +361,11 @@ header .navbar{
     font-size: var(--font-size-s);
     padding: 3px;
 
+}
+.collection-section .section-tittle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: var(--font-size-l);
 }
 
 
