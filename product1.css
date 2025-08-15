@@ -354,7 +354,7 @@ header .navbar{
 /*===== More Button ===== */
 .collection-section .more-button{
     width: 40px;
-    left: 90%;
+    left:85%;
     font-size: var(--font-size-s);
     padding: 3px;
 
