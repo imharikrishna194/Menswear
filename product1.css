@@ -9,17 +9,29 @@ header .navbar{
     justify-content: space-around;
     padding: 20px;
     position: sticky;
-    background:var(--secondary-color) ;
+    background:var(--white-color);
     top:0px;
     z-index: 5;
     animation: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     
 }
-
+.navbar .navbar-logo .logo{
+    color: var(--secondary-color);
+}
+.navbar .nav-links li a{
+    color: var(--secondary-color);
+}
+.navbar .menu-div i{
+    color: var(--secondary-color);
+}
+.navbar .social-links a i{
+    color: var(--secondary-color);
+}
 /*===== Product1 Section ===== 
 /*===== Product1 Section Img Fit */
 .product1-section{
-    padding: 5px;
+    padding: 20px;
 
 }
 .product1-section .row{
@@ -213,6 +225,11 @@ header .navbar{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    color: var(--secondary-color);
+    padding-right: 10px ;
+}
+.navbar .navbar-logo .logo{
+    font-size: var(--font-size-n);
 }
 .navbar .nav-links{
     display: flex;
@@ -229,6 +246,10 @@ header .navbar{
     transition: 0.6s;
     z-index: 99;
     background: var(--secondary-color);
+    
+}
+.navbar .nav-links li a{
+    color: var(--primary-color);
 }
  .sign-in{
     background: var(--white-color);
@@ -242,7 +263,7 @@ header .navbar{
 }
 .sign-in a{
     text-decoration: none;
-    color: var(--secondary-color);
+    color:var(--secondary-color);
     font-size: var(--font-size-n);
 }
 .navbar .nav-links .menu-close-button{
@@ -259,13 +280,14 @@ header .navbar{
     color: var(--link-hover-color);
     cursor: pointer;
 }
-.navbar .nav-links li a{
+.navbar .nav-links li .logo{
     color:var(--white-color);
     font-size: var(--font-size-n);
     font-weight: var(--font-weight-normal);
 }
 .navbar .navbar-logo a{
     font-size: var(--font-size-n);
+
 }
 .navbar .social-links{
     display: none;  
@@ -274,7 +296,7 @@ header .navbar{
     display: block;
 }
 .navbar .menu-div i{
-    color: var(--white-color);
+    color: var(--secondary-color);
     
 }
     
@@ -309,7 +331,6 @@ header .navbar{
 .product1-section .row .column .column-row .small-img-group .small-img-div2{
     display: block;
 }
-
 .product1-section .row .column .column-row .small-img-group .small-img-div img{
     margin: 0px;
 }
@@ -382,33 +403,129 @@ header .navbar{
 
 /*----- Tablet Devices -----*/
 @media only screen  and (min-width:768px) and (max-width:1023px){
+/* Header Navbar */
+header .navbar{
+    padding: 5px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.navbar .navbar-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: var(--secondary-color);
+    padding-right: 10px ;
+}
+.navbar .navbar-logo .logo{
+    font-size: var(--font-size-n);
+}
+.navbar .nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    gap: 0px;
+    padding: 20px;
+    width: 85%;
+    height: 100vh;
+    transition: 0.6s;
+    z-index: 99;
+    background: var(--secondary-color);
+    
+}
+.navbar .nav-links li a{
+    color: var(--primary-color);
+}
+ .sign-in{
+    background: var(--white-color);
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+.sign-in img{
+    width: 100%;
+    height: 90%;
+}
+.sign-in a{
+    text-decoration: none;
+    color:var(--secondary-color);
+    font-size: var(--font-size-n);
+}
+.navbar .nav-links .menu-close-button{
+    display: block;
+    font-size: var(--font-size-xxxl);
+    color: var(--primary-color);
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    margin: 5px;
+
+}
+.navbar .nav-links .menu-close-button:hover{
+    color: var(--link-hover-color);
+    cursor: pointer;
+}
+.navbar .nav-links li .logo{
+    color:var(--white-color);
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-normal);
+}
+.navbar .navbar-logo a{
+    font-size: var(--font-size-n);
+
+}
+.navbar .social-links{
+    display: none;  
+}
+.navbar .menu-div{
+    display: block;
+}
+.navbar .menu-div i{
+    color: var(--secondary-color);
+    
+}
+    
 /*===== Product1 Section ===== 
 /*===== Product1 Section Img Fit */
 .product1-section .row{
-    padding: 12px;
+    padding: 0px;
     flex-wrap: wrap;
 }
 .product1-section .row .column .column-row .main-img-div{
-    padding: 3px;
-    height: 620px;
+    padding: 0px;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
 }
+.product1-section .row .column .column-row {
+    padding: 0px;
+    height: 100%;
+}
+
 .product1-section .row .column .column-row .main-img-div img{
     width: 100%;
     height: 100%;
-}
-.product1-section .row .column .column-row  .small-img-group{
-    margin-top: 6px;
-}
-.product1-section .row .column .column-row  .small-img-group{
+    margin: 0px;
     padding: 4px;
 }
-.product1-section .row .column .column-row .small-img-group .small-img-div img{
-    margin: 2px;
-}
+.product1-section .row .column .column-row  .small-img-group{
+    margin: 0px;
+    padding: 0px;
 
+}
+.product1-section .row .column .column-row .small-img-group .small-img-div2{
+    display: block;
+}
+.product1-section .row .column .column-row .small-img-group .small-img-div img{
+    margin: 0px;
+}
 /*===== Product1 Section Content */
 .product1-section .row .column span{
-    font-size: var(--font-size-n);
+    font-size: var(--font-size-s);
 
 }
 .product1-section .row .column .tittle{
@@ -419,8 +536,16 @@ header .navbar{
     font-size: var(--font-size-xl);
 
 }
+.product1-section .row .column select{
+    width: 26%;
+    font-size: var(--font-size-n);
+}
+.product1-section .row .column input{
+    width: 10%;
+}
 .product1-section .row .column .cart-button {
-    width: 23%;
+    width: 30%;
+    font-size: var(--font-size-n);
 }
 .product1-section .row .column .details{
     font-size: var(--font-size-m);
@@ -461,6 +586,7 @@ header .navbar{
     padding-bottom: 20px;
     font-size: var(--font-size-l);
 }
+
 
 
 
