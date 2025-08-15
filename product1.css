@@ -75,6 +75,9 @@ header .navbar{
     height: 100%;
     margin: 2px;
 }
+.product1-section .row .column .column-row .small-img-group .small-img-div2{
+    display: none;
+}
 img:hover{
     cursor: pointer;
 }
@@ -285,20 +288,26 @@ header .navbar{
     padding: 0px;
     height: 100%;
     margin: 0px;
+    width: 100%;
 }
 .product1-section .row .column .column-row {
     padding: 0px;
+    height: 100%;
 }
 
 .product1-section .row .column .column-row .main-img-div img{
     width: 100%;
     height: 100%;
     margin: 0px;
+    padding: 4px;
 }
 .product1-section .row .column .column-row  .small-img-group{
-    margin-top: -4px;
-    padding: 2px;
+    margin: 0px;
+    padding: 0px;
 
+}
+.product1-section .row .column .column-row .small-img-group .small-img-div2{
+    display: block;
 }
 
 .product1-section .row .column .column-row .small-img-group .small-img-div img{
@@ -396,6 +405,7 @@ header .navbar{
 .product1-section .row .column .column-row .small-img-group .small-img-div img{
     margin: 2px;
 }
+
 /*===== Product1 Section Content */
 .product1-section .row .column span{
     font-size: var(--font-size-n);
@@ -418,6 +428,38 @@ header .navbar{
 .product1-section .row .column .content{
     font-size: var(--font-size-n);
 
+}
+.product1-section .row .column  table{
+    padding: 3px;    
+}
+.product1-section .row .column  table tr td{
+    font-size: var(--font-size-n);
+    
+}
+.product1-section .row .column .icons-group .icons{
+    width: 48%;
+    padding: 3px;
+    margin: 3px;
+}
+.product1-section .row .column .icons-group .icons i{
+    margin: 3px;
+}
+.product1-section .row .column .icons-group .icons small{
+    font-size: var(--font-size-s);
+
+}
+/*===== More Button ===== */
+.collection-section .more-button{
+    width: 40px;
+    left:85%;
+    font-size: var(--font-size-s);
+    padding: 3px;
+
+}
+.collection-section .section-tittle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: var(--font-size-l);
 }
 
 
