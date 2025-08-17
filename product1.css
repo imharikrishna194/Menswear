@@ -109,6 +109,14 @@ img:hover{
     font-size: var(--font-size-xxl);
     margin: 5px;
 }
+.product1-section .row .column .rate s{
+    margin: 5px;
+    font-size: var(--font-size-m);
+     color: var(--strike-color);
+}
+.product1-section .row .column .rate span{
+    color:var(--green-color) ;
+}
 .product1-section .row .column select{
     width: 15%;
     height: 30px;
@@ -146,6 +154,8 @@ img:hover{
     margin: 5px;
     color: var(--secondary-color);
     font-size: var(--font-size-m);
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 .product1-section .row .column  table{
@@ -380,6 +390,11 @@ header .navbar .menu-div i{
     font-size: var(--font-size-xl);
 
 }
+.product1-section .row .column .rate s{
+    margin: 3px;
+    font-size: var(--font-size-n);
+}
+
 .product1-section .row .column select{
     width: 26%;
     font-size: var(--font-size-n);
