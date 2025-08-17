@@ -141,7 +141,6 @@ img:hover{
     font-size: var(--font-size-l);
     color: var(--secondary-color);
     margin: 5px;
-
 }
 .product1-section .row .column .content{
     margin: 5px;
@@ -394,9 +393,12 @@ header .navbar .menu-div i{
 }
 .product1-section .row .column .details{
     font-size: var(--font-size-m);
+    padding-top: 5px ;
 }
 .product1-section .row .column .content{
-    font-size: var(--font-size-n);
+    font-size: var(--font-size-s);
+    padding-top: 5px ;
+    padding-bottom: 5px;
 
 }
 .product1-section .row .column  table{
