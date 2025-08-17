@@ -39,8 +39,9 @@ function viewButtonSection1(){
 };
 
 
-// Product Page 1:
 
+
+// Product Page 1:
 var MainImg = document.getElementById('mainImg');
 var smallimg = document.getElementsByClassName('small-img');
 
@@ -62,3 +63,26 @@ smallimg[4].onclick = function(){
 smallimg[5].onclick = function(){
     MainImg.src = smallimg[5].src;
 }
+
+// SelectColors
+var MainImg = document.getElementById('mainImg');
+var selectImg = document.getElementsByClassName('select-img');
+
+selectImg[0].onclick = function(){
+    MainImg.src = selectImg[0].src;
+}
+selectImg[1].onclick = function(){
+    MainImg.src = selectImg[1].src;
+}
+selectImg[2].onclick = function(){
+    MainImg.src = selectImg[2].src;
+}
+selectImg[3].onclick = function(){
+    MainImg.src = selectImg[3].src;
+}
+
+
+
+
+
+

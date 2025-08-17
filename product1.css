@@ -159,27 +159,30 @@ img:hover{
     color: var(--secondary-color);
     
 }
-.product1-section .row .column .icons-group{
+ .icons-group{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+
 }
-.product1-section .row .column .icons-group .icons{
-    width: 40%;
+ .icons-group .icons{
+    width: 15%;
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     padding-left: 0px ;
     margin-left: 0px;
     align-items: center;
     background:var(--primary-color) ;
     border-radius: var(--border-radius-s);
+    text-align: center;
 }
-.product1-section .row .column .icons-group .icons i{
+ .icons-group .icons i{
     margin: 5px;
     color: var(--secondary-color);
 }
-.product1-section .row .column .icons-group .icons small{
+ .icons-group .icons small{
     font-size: var(--font-size-n);
     color: var(--secondary-color);
 }
@@ -206,6 +209,33 @@ img:hover{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+/* Products Colors */
+.product1-section .column .colors-group{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product1-section .column .colors-group .colors-div{
+    width: 120px;
+    height: 100%;
+    align-items: center;
+    margin: 5px;
+}
+.product1-section .column .colors-group .colors-div img{
+    height: 100%;
+    width: 100%;
+}
+.product1-section .column .colors-group .colors-div img:hover{
+    border:1px solid black;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+
 
 
 
@@ -376,15 +406,15 @@ header .navbar .menu-div i{
     font-size: var(--font-size-n);
     
 }
-.product1-section .row .column .icons-group .icons{
-    width: 48%;
+.icons-group .icons{
+    width: 46%;
     padding: 3px;
     margin: 3px;
 }
-.product1-section .row .column .icons-group .icons i{
+ .icons-group .icons i{
     margin: 3px;
 }
-.product1-section .row .column .icons-group .icons small{
+ .icons-group .icons small{
     font-size: var(--font-size-s);
 
 }
@@ -400,6 +430,17 @@ header .navbar .menu-div i{
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: var(--font-size-l);
+}
+/* Products Colors */
+.product1-section .column .colors-group{
+    height: 100px;
+    width: 100%;
+}
+.product1-section .column .colors-group .colors-div{
+    width: 80px;
+    height: 100%;
+    align-items: center;
+    margin: 5px;
 }
 
 
