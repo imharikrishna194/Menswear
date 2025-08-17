@@ -413,6 +413,7 @@ header .navbar .menu-div i{
 }
  .icons-group .icons i{
     margin: 3px;
+    font-size: var(--font-size-m);
 }
  .icons-group .icons small{
     font-size: var(--font-size-s);
