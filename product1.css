@@ -649,6 +649,17 @@ header .navbar{
     padding-bottom: 20px;
     font-size: var(--font-size-l);
 }
+/* Products Colors */
+.product1-section .column .colors-group{
+    height: 100px;
+    width: 100%;
+}
+.product1-section .column .colors-group .colors-div{
+    width: 80px;
+    height: 100%;
+    align-items: center;
+    margin: 2px;
+}
 
 
 
